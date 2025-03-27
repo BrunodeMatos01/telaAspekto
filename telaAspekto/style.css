@@ -1,0 +1,1950 @@
+        /*========Fonte Text========*/
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        /*===================*/
+
+        /*========Body========*/
+        * {
+            scroll-behavior: smooth;
+        }
+
+        /*===================*/
+
+        /*========Body========*/
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /*===================*/
+
+        /*========Nav========*/
+        nav {
+            padding: 0px;
+            margin: 0px;
+            width: 100%;
+            height: 58px;
+            background-color: #260041;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        nav h2 {
+            color: white;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .hrefs {
+            width: 30rem;
+            margin-top: 1.5em;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .hrefs p {
+            color: #FFF;
+            font-family: "Montserrat", sans-serif;
+            font-size: 1rem;
+            font-weight: 300;
+
+        }
+
+        .watts {
+            width: 8em;
+            height: 4em;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .svgNav {
+            display: flex;
+            align-items: center;
+        }
+
+        .querConversar {
+            width: 6em;
+            height: 0.8em;
+            background-color: white;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .TextNav {
+            color: black;
+            font-family: "Montserrat", sans-serif;
+            font-size: 0.6rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 1;
+        }
+
+
+        /*===================*/
+
+        /*========a========*/
+        a {
+            text-decoration: none;
+        }
+
+        /*===================*/
+
+        /*========Div 1========*/
+        #div1 {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-evenly;
+            box-sizing: border-box;
+            width: 100%;
+            height: 728.731px;
+            background: url(img/Rectangle\ \(2\).png) lightgray 0px 0px / 100% 100% no-repeat;
+            color: white;
+            padding: 20px;
+            position: relative;
+            margin: 0px;
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 768px) {
+            #div1 {
+                flex-direction: column;
+                /* Alinha os elementos em coluna em telas pequenas */
+                height: auto;
+                /* Ajusta a altura */
+                padding: 10px;
+                /* Reduz o padding */
+            }
+        }
+
+        /*===================*/
+
+        /*========Text div1========*/
+        #divNovoAspecto {
+            max-width: 50%;
+            text-align: left;
+            margin-right: 0px;
+            padding: 0px;
+        }
+
+        @media (max-width: 768px) {
+            #divNovoAspecto {
+                max-width: 100%;
+                /* Expande para 100% em telas pequenas */
+                text-align: center;
+                /* Centraliza o texto */
+                margin-bottom: 20px;
+                /* Adiciona um espaço abaixo */
+            }
+        }
+
+        .graphic-container {
+            margin-right: 0px;
+            padding: 0px;
+            display: block;
+            /* Mantém a div visível por padrão */
+        }
+
+        /* Esconde a graphic-container em telas pequenas */
+        @media (max-width: 768px) {
+            .graphic-container {
+                display: none;
+                /* Esconde a div em dispositivos móveis */
+            }
+        }
+
+        #novo,
+        #resultados {
+            margin: 0px;
+            padding: 0px;
+            color: #FFF;
+            font-family: "Montserrat", sans-serif;
+            font-size: 56.882px;
+            font-weight: 450;
+            line-height: 63.368px;
+        }
+
+        @media (max-width: 768px) {
+
+            #novo,
+            #resultados {
+                font-size: 32px;
+                /* Reduz o tamanho da fonte em telas pequenas */
+                text-align: center;
+                /* Centraliza o texto */
+            }
+        }
+
+        #aspecto,
+        #novos {
+            margin: 0px;
+            padding: 0px;
+            color: #FFF;
+            font-family: "Montserrat", sans-serif;
+            font-size: 56.882px;
+            font-weight: 700;
+            line-height: 63.368px;
+        }
+
+        @media (max-width: 768px) {
+
+            #aspecto,
+            #novos {
+                font-size: 32px;
+                /* Reduz o tamanho da fonte em telas pequenas */
+                text-align: center;
+                /* Centraliza o texto */
+            }
+        }
+
+        p {
+            margin: 0px;
+            margin-top: 16px;
+            margin-bottom: 38px;
+            padding: 0px;
+            color: #FFF;
+            font-family: "Montserrat", sans-serif;
+            font-size: 18px;
+            font-weight: 450;
+            line-height: 24px;
+        }
+
+        @media (max-width: 768px) {
+            p {
+                font-size: 16px;
+                /* Reduz o tamanho da fonte em telas pequenas */
+                text-align: center;
+                /* Centraliza o parágrafo */
+            }
+        }
+
+        /*===================*/
+
+        /*========Btn div1========*/
+
+        #btn2 {
+            margin: 0px;
+            border-radius: 68px;
+            background: #57AE6C;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            padding: 0.3em 2em;
+            border: solid 0px;
+        }
+
+        #btn2:hover {
+            background-color: #258a5c;
+        }
+
+        @media (max-width: 768px) {
+            #btn2 {
+                width: 100%;
+                /* Faz o botão ocupar toda a largura em telas pequenas */
+                padding: 10px;
+                /* Aumenta o padding para facilitar o clique */
+            }
+        }
+
+        #vamos2 {
+            color: #ffffff;
+            font-family: "Montserrat", sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 22px;
+            margin-right: 1rem;
+            padding: 0.4rem;
+        }
+
+        @media (max-width: 768px) {
+            #vamos2 {
+                font-size: 18px;
+            }
+        }
+
+        #btn2 svg {
+            width: 1.3rem;
+            height: 1.3rem;
+            background-color: #150024;
+            border-radius: 50%;
+            padding: 6px;
+        }
+
+        /*===================*/
+
+        /*========Carrossel Entre div1 e div2========*/
+
+        #Entrediv1div2 {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 4.2em;
+            background-color: white;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #textEntreDivs {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            /* Agora aplica space-around */
+            width: 90%;
+            /* Reduzindo para evitar que o texto encoste nas bordas */
+            height: 4em;
+            padding: 0 2rem;
+            /* Adiciona padding para afastar as bordas */
+        }
+
+        #textEntreDivs span {
+            color: #140024;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18.764px;
+            font-weight: 500;
+            line-height: 17.734px;
+        }
+
+        #carrosselEntredivs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 2;
+            overflow: hidden;
+            position: relative;
+            width: 60%;
+            height: 4em;
+            mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+        }
+
+        .img-track {
+            display: flex;
+            animation: scroll 15s linear infinite;
+            gap: 1.5em;
+        }
+
+        .img-track svg {
+            width: 4.2rem;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+
+        /*===================*/
+
+
+        /*========Div 2========*/
+        #div2 {
+            position: relative;
+            padding: 0;
+            margin: 0;
+            height: 650px;
+            width: 100%;
+            background-color: white;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            overflow: hidden;
+        }
+
+        @media (max-width: 768px) {
+            #div2 {
+                flex-direction: column;
+                /* Alinha os elementos em coluna em telas pequenas */
+                height: auto;
+                /* Ajusta a altura para auto em telas menores */
+                padding: 20px;
+                /* Adiciona espaçamento */
+            }
+        }
+
+        /*===================*/
+
+        /*========Desenho Verde========*/
+        #Desenhoverde {
+            position: relative;
+            width: 685px;
+            height: 685px;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            /* Alinha a imagem no centro */
+            align-items: center;
+            /* Centraliza verticalmente */
+        }
+
+        @media (max-width: 768px) {
+            #Desenhoverde {
+                width: 100%;
+                /* Reduz a largura para 100% em telas pequenas */
+                height: 400px;
+                /* Ajusta a altura em telas pequenas */
+                margin-bottom: 20px;
+                /* Adiciona espaço abaixo */
+            }
+        }
+
+        /*===================*/
+
+        /*========Imagem div 2========*/
+        #imagemFerro1 {
+            position: relative;
+            width: 251px;
+            height: 454px;
+            border-radius: 10px;
+            background: url(img/Rectangle\ 5\ \(1\).png) lightgray 50% / cover no-repeat;
+            z-index: 1;
+            margin: auto;
+            right: 53vh;
+        }
+
+        /* Ajustes para telas menores */
+        @media (max-width: 768px) {
+            #Desenhoverde {
+                width: 100%;
+                height: auto;
+                margin-bottom: 20px;
+                flex-direction: column;
+                /* Alinha os elementos em coluna */
+            }
+
+            #imagemFerro1 {
+                width: 200px;
+                height: 350px;
+                margin: 0 auto;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        /*===================*/
+
+        /*========Text div2========*/
+        #textContainer {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: left;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        @media (max-width: 768px) {
+            #textContainer {
+                max-width: 100%;
+                /* Ajusta a largura do container para 100% em telas menores */
+                text-align: center;
+                /* Centraliza o texto */
+            }
+        }
+
+        #Geraldiv2 {
+            display: flex;
+            flex-direction: column;
+            gap: 1.7rem;
+        }
+
+        #divDotext {
+            width: 100%;
+            height: 100%;
+        }
+
+        #textdiv1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3em;
+            font-weight: 400;
+            line-height: 1em;
+            color: #000;
+            text-align: left;
+        }
+
+        @media (max-width: 768px) {
+            #textdiv1 {
+                font-size: 28px;
+                /* Reduz o tamanho da fonte em telas pequenas */
+                text-align: center;
+                /* Centraliza o título */
+            }
+        }
+
+        #marketing {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1em;
+            font-weight: 800;
+            color: #150024;
+        }
+
+        @media (max-width: 768px) {
+            #marketing {
+                font-size: 28px;
+                /* Reduz o tamanho da fonte em telas pequenas */
+                text-align: center;
+                /* Centraliza o texto */
+            }
+        }
+
+        #textdiv2 {
+            color: #140024;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 23px;
+        }
+
+        #text2div2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+
+            #text2div2 {
+                font-size: 14px;
+                /* Reduz o tamanho da fonte em telas pequenas */
+                text-align: center;
+                /* Centraliza os textos */
+            }
+        }
+
+        #text4div2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+
+            margin: 0px;
+            padding: 0px;
+            width: 17vw;
+            height: 22vh;
+        }
+
+        #textFilha1div2,
+        #textFilha2div2,
+        #textFilha3div2 {
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            align-items: center;
+        }
+
+        #text1svg,
+        #text2svg,
+        #text3svg {
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        #textFilha1div2 svg,
+        #textFilha2div2 svg,
+        #textFilha3div2 svg {
+            margin-right: 10px;
+        }
+
+        #textFilha1div2 span,
+        #textFilha2div2 span,
+        #textFilha3div2 span {
+            margin-left: 10px;
+        }
+
+
+        #textdiv1 {
+            font-family: 'Montserrat', sans-serif;
+            display: block;
+        }
+
+        #marketing {
+            font-family: 'Montserrat', sans-serif;
+            display: inline-block;
+        }
+
+        #Aaspekto {
+            color: #140024;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 23px;
+        }
+
+        #imaginaria {
+            height: 130px;
+            width: 130px;
+        }
+
+        @media (max-width: 768px) {
+            #imaginaria {
+                height: 100px;
+                /* Ajusta o tamanho da imagem */
+                width: 100px;
+                /* Ajusta o tamanho da imagem */
+                margin: 10px auto;
+                /* Centraliza a imagem */
+            }
+        }
+
+        /*========Btndiv2========*/
+
+        #buttondiv2 {
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            #buttondiv2 {
+                margin-top: 20px;
+                /* Adiciona margem superior ao botão em telas pequenas */
+            }
+        }
+
+        #btn5 {
+            margin: 0px;
+            border-radius: 68px;
+            background: #57AE6C;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            padding: 0.1em 1em;
+            border: solid 0px;
+        }
+
+        @media (max-width: 768px) {
+            #btn5 {
+                width: 200px;
+                /* Ajusta a largura do botão em telas pequenas */
+                height: 40px;
+                /* Ajusta a altura do botão */
+            }
+        }
+
+        #btn5:hover {
+            background-color: #258a5c;
+        }
+
+        #btn5 svg {
+            width: 1.4rem;
+            height: 1.4rem;
+            background-color: #150024;
+            border-radius: 50%;
+            padding: 1px;
+        }
+
+        #vamos5 {
+            color: #ffffff;
+            font-family: "Montserrat", sans-serif;
+            font-size: 1.3em;
+            font-weight: 700;
+            line-height: 22px;
+            margin-right: 1rem;
+            padding: 0.5rem;
+        }
+
+        /*===================*/
+
+        /*========Div 3========*/
+        #div3 {
+            padding: 0px;
+            margin: 0px;
+            height: 584px;
+            width: 100%;
+            background: url(img/Rectangle\ 6.png) lightgray 0px 0px / 100% 100% no-repeat;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            #div3 {
+                height: auto;
+                /* Ajusta a altura em telas menores */
+                padding: 20px;
+                /* Adiciona espaçamento */
+            }
+        }
+
+        /*===================*/
+
+        /*========Text Geral div3========*/
+        #Textdiv3 {
+            margin: auto;
+            width: 875px;
+            height: 109px;
+            flex-shrink: 0;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        @media (max-width: 768px) {
+            #Textdiv3 {
+                width: 100%;
+                /* Ajusta a largura para 100% em telas pequenas */
+                text-align: center;
+                /* Centraliza o texto */
+            }
+        }
+
+        #TextEstrategiadiv3 {
+            color: #FFF;
+            text-align: center;
+            font-family: "Montserrat", sans-serif;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 450;
+            line-height: 47px;
+        }
+
+        @media (max-width: 768px) {
+            #TextEstrategiadiv3 {
+                font-size: 30px;
+                /* Reduz o tamanho da fonte em telas menores */
+            }
+        }
+
+        #TextMarcadiv3 {
+            color: #FFF;
+            font-family: "Montserrat", sans-serif;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 47px;
+        }
+
+        @media (max-width: 768px) {
+            #TextMarcadiv3 {
+                font-size: 30px;
+                /* Reduz o tamanho da fonte em telas menores */
+            }
+        }
+
+        /*===================*/
+
+        /*========Div Mae e Filhas========*/
+        #divMae {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 1100px;
+            margin: auto;
+        }
+
+        @media (max-width: 768px) {
+            #divMae {
+                flex-direction: column;
+                /* Muda a direção do layout para coluna em telas pequenas */
+                width: 100%;
+                /* Ajusta a largura para 100% */
+            }
+        }
+
+        #divfilha1,
+        #divfilha2,
+        #divfilha3 {
+            width: 348.964px;
+            height: 197.788px;
+            flex-shrink: 0;
+            border-radius: 5.039px;
+            background: linear-gradient(0deg, #FFF 0%, #E1E1E1 28%, #E6FEF0 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 768px) {
+
+            #divfilha1,
+            #divfilha2,
+            #divfilha3 {
+                width: 100%;
+                /* Ajusta a largura para 100% em telas pequenas */
+                height: auto;
+                /* Ajusta a altura automaticamente */
+                margin-bottom: 20px;
+                /* Adiciona espaçamento entre os itens */
+            }
+        }
+
+        #divfilha3 svg {
+            width: 38px;
+            height: 38px;
+        }
+
+        #divfilha1 svg,
+        #divfilha2 svg,
+        #divfilha3 svg {
+            margin-top: 30px;
+            margin-bottom: 0px;
+            margin-left: 22px;
+        }
+
+        /*===================*/
+
+        /*========Text Filhas========*/
+        #Text1Filha1,
+        #Text1Filha2,
+        #Text1Filha3 {
+            color: #000;
+            font-family: "Montserrat", sans-serif;
+            font-size: 23.196px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 29.044px;
+            margin-right: 30px;
+            margin-top: 35px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+        }
+
+        @media (max-width: 768px) {
+
+            #Text1Filha1,
+            #Text1Filha2,
+            #Text1Filha3 {
+                font-size: 18px;
+                /* Reduz o tamanho da fonte em telas pequenas */
+                text-align: center;
+                /* Centraliza o texto */
+                margin-top: 20px;
+                /* Ajusta a margem superior */
+            }
+        }
+
+        #Text2Filha1,
+        #Text2Filha2,
+        #Text2Filha3 {
+            display: flex;
+            width: 298.572px;
+            height: 65.509px;
+            flex-shrink: 0;
+            color: #000;
+            font-family: Helvetica;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 20.157px;
+            text-align: start;
+            margin-left: 20px;
+
+        }
+
+        @media (max-width: 768px) {
+
+            #Text2Filha1,
+            #Text2Filha2,
+            #Text2Filha3 {
+                font-size: 14px;
+                /* Reduz o tamanho da fonte */
+                margin-bottom: 20px;
+                /* Ajusta a margem inferior */
+                text-align: center;
+                /* Centraliza o texto */
+            }
+        }
+
+        /*===================*/
+
+        /*========Btn div3========*/
+        #buttondiv3 {
+            display: flex;
+            align-items: center;
+            margin: auto;
+        }
+
+        @media (max-width: 768px) {
+            #buttondiv3 {
+                margin-top: 20px;
+                /* Adiciona espaço acima do botão */
+            }
+        }
+
+        /*===================*/
+
+
+        /*========Div 4========*/
+        #div4 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            margin: 0px;
+            height: 650px;
+            width: 100%;
+            background-color: white;
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 768px) {
+            #div4 {
+                height: auto;
+                /* Ajusta a altura para tela pequena */
+                padding: 20px;
+                /* Adiciona espaçamento */
+            }
+        }
+
+        /*===================*/
+
+        /*========Imagem div4========*/
+        #ImagemDiv4 {
+            width: 241px;
+            height: 390px;
+            flex-shrink: 0;
+            border-radius: 17px;
+            background: url(img/image\ \(4\).png) lightgray -208.361px 0px / 271.383% 100% no-repeat;
+            margin-top: 55px;
+        }
+
+        @media (max-width: 768px) {
+            #ImagemDiv4 {
+                width: 80%;
+                /* Ajusta a largura da imagem para 80% em telas menores */
+                height: auto;
+                /* Ajusta a altura proporcionalmente */
+                margin-top: 20px;
+                /* Ajusta a margem superior */
+            }
+        }
+
+        /*===================*/
+
+        /*========Div Geral 4========*/
+        #Geraldiv4 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            /* Centraliza horizontalmente */
+            gap: 11em;
+            /* Espaçamento entre a imagem e o texto */
+            width: 100%;
+            height: 100vh;
+            /* Ajusta a altura para ocupar a altura total da viewport */
+        }
+
+        @media (max-width: 768px) {
+            #Geraldiv4 {
+                flex-direction: column;
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        /*===================*/
+
+        /*========Text div 4========*/
+        #TextGeraldiv4 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: auto;
+            /* Ajusta para ocupar apenas o necessário */
+            height: auto;
+            flex-shrink: 0;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        @media (max-width: 768px) {
+            #TextGeraldiv4 {
+                width: 100%;
+                height: auto;
+                text-align: center;
+            }
+        }
+
+        #Text1div4 {
+            width: 440px;
+            height: 109px;
+            margin-bottom: 1.4em;
+        }
+
+        @media (max-width: 768px) {
+            #Text1div4 {
+                width: 100%;
+                /* Ajusta a largura para 100% em telas pequenas */
+            }
+        }
+
+        #Osegredo {
+            color: #140024;
+            font-family: "Montserrat", sans-serif;
+            font-size: 36px;
+            font-weight: 450;
+            line-height: 39px;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            #Osegredo {
+                font-size: 24px;
+                /* Reduz o tamanho da fonte em telas pequenas */
+            }
+        }
+
+        #AtraireConverter {
+            color: #140024;
+            font-family: "Montserrat", sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 39px;
+        }
+
+        @media (max-width: 768px) {
+            #AtraireConverter {
+                font-size: 24px;
+                /* Reduz o tamanho da fonte em telas pequenas */
+            }
+        }
+
+        #Text2div4 {
+            width: 440px;
+            height: 109px;
+        }
+
+        #Text3div4 {
+            width: 440px;
+            height: 109px;
+        }
+
+
+        @media (max-width: 768px) {
+            #Text2div4 {
+                width: 100%;
+                /* Ajusta a largura para 100% em telas pequenas */
+                height: auto;
+                /* Ajusta a altura para se adaptar ao conteúdo */
+            }
+        }
+
+        #Inboundmarketing {
+            color: #000;
+            font-family: "Montserrat", sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 16.948px;
+            margin-bottom: 10px;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 768px) {
+            #Inboundmarketing {
+                font-size: 12px;
+                /* Ajusta o tamanho da fonte */
+            }
+        }
+
+        #ComoInb {
+            color: #000;
+            font-family: "Montserrat", sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 7.763px
+        }
+
+        #Comofunciona {
+            color: #57AE6C;
+            font-family: "Montserrat", sans-serif;
+            font-size: 17.784px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 11.844px;
+            margin-bottom: 1.3em;
+        }
+
+        @media (max-width: 768px) {
+            #Comofunciona {
+                font-size: 12px;
+                /* Ajusta o tamanho da fonte */
+            }
+        }
+
+        #texto1,
+        #texto2,
+        #texto3 {
+            color: #000;
+            font-family: "Montserrat", sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.5;
+            padding: 0px;
+            margin: 0px 0px 15px 20px;
+            /* Adiciona um espaçamento entre o ícone e o texto */
+        }
+
+        @media (max-width: 768px) {
+
+            #texto1,
+            #texto2,
+            #texto3 {
+                font-size: 12px;
+                /* Ajusta o tamanho da fonte */
+            }
+        }
+
+        #Textsvgdiv4 {
+            width: 100%;
+            height: 100%;
+        }
+
+        #textsvg {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            /* Espaçamento entre os itens */
+        }
+
+        #svg1div4,
+        #svg2div4,
+        #svg3div4 {
+            width: 20px;
+            height: 20px;
+            margin: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        /*===================*/
+
+        /*========Btn div4========*/
+        #buttondiv4 {
+            margin-bottom: 2em;
+        }
+
+        @media (max-width: 768px) {
+            #buttondiv4 {
+                margin-top: 20px;
+                /* Adiciona margem superior ao botão em telas pequenas */
+            }
+        }
+
+        #btn4 {
+            margin: 0px;
+            border-radius: 68px;
+            background: #57AE6C;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            padding: 0.3em 1em;
+            border: solid 0px;
+        }
+
+        @media (max-width: 768px) {
+            #btn4 {
+                width: 200px;
+                /* Ajusta a largura do botão em telas pequenas */
+                height: 40px;
+                /* Ajusta a altura do botão */
+            }
+        }
+
+        #btn4:hover {
+            background-color: #258a5c;
+        }
+
+        #btn4 svg {
+            width: 1.4rem;
+            height: 1.4rem;
+            background-color: #150024;
+            border-radius: 50%;
+            padding: 1px;
+        }
+
+        #vamos4 {
+            color: #ffffff;
+            font-family: "Montserrat", sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 22px;
+            margin-right: 1rem;
+            padding: 0.4rem;
+        }
+
+        @media (max-width: 768px) {
+            #vamos4 {
+                font-size: 12px;
+                /* Ajusta o tamanho da fonte do texto no botão */
+            }
+        }
+
+        /*===================*/
+
+
+        /*========Div 5========*/
+        #div5 {
+            padding: 0px;
+            margin: 0px;
+            height: 704px;
+            width: 100%;
+            background: #F2F2F2;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media (max-width: 768px) {
+            #div5 {
+                height: auto;
+                /* Ajusta a altura para telas pequenas */
+                padding: 20px;
+                /* Adiciona espaçamento */
+            }
+        }
+
+        /*===================*/
+
+        /*========Divs Text div5========*/
+        #Text1div5 {
+            width: 549px;
+            height: 111px;
+            margin-bottom: 2em;
+        }
+
+        @media (max-width: 768px) {
+            #Text1div5 {
+                width: 100%;
+                /* Ajusta a largura para 100% em telas pequenas */
+                margin-bottom: 20px;
+                /* Ajusta a margem inferior */
+            }
+        }
+
+        #Text2div5 {
+            margin-bottom: 35px;
+        }
+
+        @media (max-width: 768px) {
+            #Text2div5 {
+                margin-bottom: 20px;
+                /* Ajusta a margem inferior */
+            }
+        }
+
+        /*===================*/
+
+        /*========Text div5========*/
+        #Veja {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 200;
+            font-size: 49.1px;
+            line-height: 49.1px;
+            letter-spacing: 0%;
+            text-align: center;
+            vertical-align: middle;
+            color: #000000;
+            margin: 0px;
+        }
+
+        @media (max-width: 768px) {
+            #Veja {
+                font-size: 30px;
+                /* Reduz o tamanho da fonte em telas pequenas */
+            }
+        }
+
+        #NossosClientes {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 450;
+            font-size: 49.1px;
+            line-height: 49.1px;
+            letter-spacing: 0%;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            #NossosClientes {
+                font-size: 30px;
+                /* Reduz o tamanho da fonte em telas pequenas */
+            }
+        }
+
+        #DoisPontos {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 450;
+        }
+
+        @media (max-width: 768px) {
+            #DoisPontos {
+                font-size: 30px;
+                /* Reduz o tamanho da fonte em telas pequenas */
+            }
+        }
+
+        #Agencia,
+        #Agencia2,
+        #Agencia3,
+        #Agencia4,
+        #Agencia5 {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            font-size: 15.68px;
+            line-height: 17.95px;
+            letter-spacing: 0%;
+            text-align: center;
+            vertical-align: middle;
+            color: #000000;
+        }
+
+        @media (max-width: 768px) {
+
+            #Agencia,
+            #Agencia2,
+            #Agencia3,
+            #Agencia4,
+            #Agencia5 {
+                font-size: 10px;
+                /* Reduz o tamanho da fonte em telas pequenas */
+            }
+        }
+
+        #NJ {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            font-size: 11.68px;
+            line-height: 10.68px;
+            letter-spacing: 0%;
+            text-align: center;
+            vertical-align: middle;
+            color: #000000;
+        }
+
+        @media (max-width: 768px) {
+            #NJ {
+                font-size: 9px;
+                /* Reduz o tamanho da fonte em telas pequenas */
+            }
+        }
+
+        .nomesDiv5 {
+            display: flex;
+            width: 30%;
+            justify-content: space-between;
+        }
+
+        #Silvia {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            font-size: 11.68px;
+            line-height: 10.68px;
+            letter-spacing: 0%;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        @media (max-width: 768px) {
+            #Silvia {
+                font-size: 9px;
+                /* Reduz o tamanho da fonte em telas pequenas */
+            }
+        }
+
+        /*===================*/
+
+        /*========Carrossel========*/
+        #carousel {
+            width: 100%;
+            max-width: 700px;
+            /* Define uma largura máxima mais controlada */
+            margin: 0 auto;
+            /* Centraliza o carrossel */
+            overflow: hidden;
+            position: relative;
+        }
+
+        @media (max-width: 768px) {
+            #carousel {
+                width: 100%;
+                max-width: 100%;
+                /* Garantir que fique 100% em dispositivos móveis */
+            }
+        }
+
+        #slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            width: 100%;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+            background: #F2F2F2;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly; /* Alinhamento consistente */
+            align-items: center;
+            padding: -10rem; /* Ajuste de padding para manter o espaço interno */
+            height: 250px; /* Definir uma altura mínima padrão */
+        }
+
+        .slide p {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            line-height: 14.95px;
+            letter-spacing: 0%;
+            text-align: center;
+            color: #000000;
+            max-width: 90%;
+            /* Limita a largura do texto para que não fique muito largo */
+        }
+
+        @media (max-width: 768px) {
+            .slide p {
+                font-size: 10px;
+            }
+        }
+
+        /*=========Botões===========*/
+        #prev,
+        #next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: rgba(0, 0, 0, 0.7);
+            /* Botões mais visíveis */
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            z-index: 10;
+            /* Coloca os botões acima do conteúdo */
+        }
+
+        #prev {
+            top: 4.5rem;
+            left: 1rem;
+            /* Ajuste mais próximo à esquerda */
+        }
+
+        #next {
+            top: 4.5rem;
+            right: 1rem;
+            /* Ajuste mais próximo à direita */
+        }
+
+        #rodapeSlider {
+            width: 30%;
+            height: 20%;
+        }
+
+        /*===================*/
+
+        /*========Borda Imagem========*/
+        #Borda {
+            width: 706px;
+            height: 215px;
+            flex-shrink: 0;
+            border-radius: 4px;
+            border: 2px solid #150024;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 768px) {
+            #Borda {
+                max-width: 100%;
+                height: auto;
+                padding: 10px;
+            }
+        }
+
+        /*===================*/
+
+        /*========Imagem div5========*/
+        #Imagendiv5 {
+            max-width: 100%;
+            height: auto;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 768px) {
+            #Imagendiv5 {
+                width: 100%;
+                /* Ajusta a largura para 100% em telas pequenas */
+                height: auto;
+                /* Ajusta a altura proporcionalmente */
+            }
+        }
+
+        /*===================*/
+
+
+        /*========Div 6========*/
+        #div6 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0px;
+            margin: 0px;
+            height: 727.608px;
+            width: 100%;
+            background: url(img/Rectangle\ \(2\).png) lightgray 0px 0px / 100% 100% no-repeat;
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 768px) {
+            #div6 {
+                height: auto;
+                /* Ajusta a altura para telas pequenas */
+                padding: 20px;
+                /* Adiciona espaçamento */
+            }
+        }
+
+        /*===================*/
+
+        /*========Div Geral6========*/
+        #DivGeral6 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 1600px;
+            height: 450px;
+            margin-top: 0px;
+        }
+
+        @media (max-width: 768px) {
+            #DivGeral6 {
+                flex-direction: column;
+                /* Ajusta para coluna em telas pequenas */
+                width: 100%;
+                /* Ajusta a largura para 100% em telas pequenas */
+                margin-top: 20px;
+            }
+        }
+
+        /*===================*/
+
+        /*========Text Geral6========*/
+        #TextGeradiv6 {
+            width: 330px;
+            height: 280px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: space-between;
+            margin-left: 200px;
+        }
+
+        @media (max-width: 768px) {
+            #TextGeradiv6 {
+                width: 100%;
+                /* Ajusta a largura para 100% em telas pequenas */
+                margin-left: 0;
+                /* Remove a margem */
+                margin-bottom: 20px;
+                /* Adiciona um espaçamento inferior */
+            }
+        }
+
+        /*===================*/
+
+        /*========Div Text "Qual" e "Se sua"6========*/
+        #Text1div6 {
+            display: flex;
+            width: 330px;
+            height: 81px;
+            flex-direction: column;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 768px) {
+            #Text1div6 {
+                width: 100%;
+                /* Ajusta a largura para 100% em telas pequenas */
+            }
+        }
+
+        #Text2div6 {
+            display: flex;
+            width: 292px;
+            height: 74px;
+            flex-direction: column;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 768px) {
+            #Text2div6 {
+                width: 100%;
+                /* Ajusta a largura para 100% em telas pequenas */
+            }
+        }
+
+        /*===================*/
+
+        /*========Text div6========*/
+        #Qual {
+            color: #FFF;
+            font-family: "Montserrat", sans-serif;
+            font-size: 30.804px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 31.89px;
+            letter-spacing: 0.745px;
+        }
+
+        @media (max-width: 768px) {
+            #Qual {
+                font-size: 24px;
+                /* Reduz o tamanho da fonte para telas menores */
+                text-align: center;
+                /* Centraliza o texto em telas menores */
+            }
+        }
+
+        #suaEmpresa {
+            color: #FFF;
+            font-family: "Montserrat", sans-serif;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 450;
+            line-height: 18px;
+        }
+
+        @media (max-width: 768px) {
+            #suaEmpresa {
+                font-size: 14px;
+                /* Reduz o tamanho da fonte em telas pequenas */
+                text-align: center;
+                /* Centraliza o texto em telas menores */
+            }
+        }
+
+        /*===================*/
+
+        /*========Form div6========*/
+        #Formdiv6 {
+            width: 393.82px;
+            height: 344.887px;
+            background-color: white;
+            margin-right: 200px;
+            border: 4px solid transparent;
+            border-radius: 4px;
+            padding: 15px;
+            transition: border-color 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            #Formdiv6 {
+                width: 100%;
+                /* Ajusta a largura para 100% em telas pequenas */
+                margin-right: 0;
+                /* Remove a margem */
+            }
+        }
+
+        #customForm {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .input-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+
+        .input-group {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            margin-right: 10px;
+        }
+
+        .input-group:last-child {
+            margin-right: 10px;
+        }
+
+        label {
+            font-size: 12px;
+            margin-bottom: 5px;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #333;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        option {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 12px;
+        }
+
+        input,
+        select,
+        textarea {
+            padding: 8px;
+            font-size: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+            font-family: 'Montserrat', sans-serif;
+            width: 100%;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #7e22ce;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .submit-btn {
+            display: flex;
+            justify-content: center;
+        }
+
+        .submit-btn button {
+            width: 100%;
+            height: 2.5rem;
+            margin-top: 10px;
+            background-color: #57AE6C;
+            color: white;
+            padding: 8px 15px;
+            font-size: 12px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn button:hover {
+            background-color: #258a5c;
+        }
+
+        /*===================*/
+
+        /*========Btn div6========*/
+
+        #buttondiv6 {
+            margin: auto;
+        }
+
+        @media (max-width: 768px) {
+            #buttondiv6 {
+                margin-top: 20px;
+                /* Adiciona margem superior ao botão em telas pequenas */
+            }
+        }
+
+        #btn6 {
+            margin: 0px;
+            border-radius: 68px;
+            background: #57AE6C;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            padding: 0.3em 1em;
+            border: solid 0px;
+        }
+
+        @media (max-width: 768px) {
+            #btn6 {
+                width: 200px;
+                /* Ajusta a largura do botão em telas pequenas */
+                height: 40px;
+                /* Ajusta a altura do botão */
+            }
+        }
+
+        #btn6:hover {
+            background-color: #258a5c;
+        }
+
+        #btn6 svg {
+            display: flex;
+            width: 1.3rem;
+            height: 1.3rem;
+            background-color: #150024;
+            border-radius: 50%;
+            padding: 0.2rem;
+        }
+
+        #vamos6 {
+            color: #ffffff;
+            font-family: "Montserrat", sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 22px;
+            margin-right: 1rem;
+            padding: 0.4rem;
+        }
+
+        @media (max-width: 768px) {
+            #vamos6 {
+                font-size: 12px;
+                /* Ajusta o tamanho da fonte do texto no botão */
+            }
+        }
+
+        /*===================*/
+
+        /*========Linha div6========*/
+        #Linha {
+            width: 500.26px;
+            height: 0.667px;
+            flex-shrink: 0;
+            border-top: 0.667px solid rgba(255, 255, 255, 0.14);
+            margin-top: 4em;
+        }
+
+        @media (max-width: 768px) {
+            #Linha {
+                width: 100%;
+                /* Ajusta a largura da linha para 100% em telas pequenas */
+            }
+        }
+
+        /*===================*/
+
+        /*========Footer div6========*/
+        #footer {
+            margin-top: 70px;
+        }
+
+        #footerGeral {
+            width: 960px;
+            height: 30px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        @media (max-width: 768px) {
+            #footerGeral {
+                width: 100%;
+                /* Ajusta a largura do footer para 100% em telas pequenas */
+            }
+        }
+
+        /*===================*/
+
+        /*========Div do "Termo"6========*/
+        #Text3div6 {
+            display: flex;
+            width: 390.973px;
+            height: 13.333px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 768px) {
+            #Text3div6 {
+                width: 100%;
+                /* Ajusta a largura para 100% em telas pequenas */
+            }
+        }
+
+        /*===================*/
+
+        /*========Footer Text6========*/
+        #Aspekto {
+            width: 101px;
+            height: 22px;
+            flex-shrink: 0;
+        }
+
+        #Termos {
+            color: #FFF;
+            font-family: "Montserrat", sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 26.4px;
+            letter-spacing: 0.667px;
+        }
+
+        @media (max-width: 768px) {
+            #Termos {
+                font-size: 12px;
+                /* Reduz o tamanho da fonte para telas menores */
+                text-align: center;
+                /* Centraliza o texto em telas menores */
+            }
+        }
+
+        #Icones {
+            display: flex;
+            width: 110px;
+            height: 35px;
+            padding: 10px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        @media (max-width: 768px) {
+            #Icones {
+                justify-content: center;
+                /* Centraliza os ícones em telas pequenas */
+            }
+        }
+
+        #Be svg,
+        #Insta svg,
+        #LinkeDin svg,
+        #Watts svg {
+            width: 19px;
+            height: 19px;
+        }
+
+        @media (max-width: 768px) {
+
+            #Be svg,
+            #Insta svg,
+            #LinkeDin svg,
+            #Watts svg {
+                width: 16px;
+                /* Reduz o tamanho dos ícones para telas pequenas */
+                height: 16px;
+            }
+        }
