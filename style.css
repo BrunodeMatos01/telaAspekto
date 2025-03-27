@@ -32,6 +32,11 @@
             flex-direction: row;
             justify-content: space-evenly;
             align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         nav h2 {
@@ -59,7 +64,7 @@
 
         .watts {
             width: 8em;
-            height: 4em;
+            height: 1em;
             display: flex;
             align-items: center;
             flex-direction: row;
@@ -288,10 +293,11 @@
 
         #Entrediv1div2 {
             display: flex;
+            align-items: center;
             justify-content: center;
             width: 100%;
-            height: 4.2em;
-            background-color: white;
+            height: 6.2em;
+            background-color: #e6e6e6;
             margin: 0px;
             padding: 0px;
         }
@@ -299,13 +305,9 @@
         #textEntreDivs {
             display: flex;
             align-items: center;
-            justify-content: space-around;
-            /* Agora aplica space-around */
-            width: 90%;
-            /* Reduzindo para evitar que o texto encoste nas bordas */
+            justify-content: space-evenly;
+            width: 60%;
             height: 4em;
-            padding: 0 2rem;
-            /* Adiciona padding para afastar as bordas */
         }
 
         #textEntreDivs span {
@@ -316,26 +318,43 @@
             line-height: 17.734px;
         }
 
+        #textCarrosselEntre {
+            width: 100%;
+        }
+
         #carrosselEntredivs {
             display: flex;
             align-items: center;
             justify-content: center;
-            flex: 2;
             overflow: hidden;
+            /* Garante que as imagens fiquem dentro da div */
             position: relative;
-            width: 60%;
-            height: 4em;
-            mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+            width: 80%;
+            height: 6em;
+            mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
+            padding: 0;
+            /* Remove padding para evitar que o conteúdo saia */
         }
 
         .img-track {
             display: flex;
-            animation: scroll 15s linear infinite;
-            gap: 1.5em;
+            animation: scroll 25s linear infinite;
+            gap: 2rem;
+            /* Diminui o gap entre as imagens */
+            width: fit-content;
+            align-items: center;
         }
 
-        .img-track svg {
-            width: 4.2rem;
+        .img-track img {
+            width: 7.2rem;
+            margin-top: 0.5em;
+            /* Adiciona uma pequena margem em cima e em baixo */
+            margin-bottom: 0.5em;
+            box-sizing: border-box;
+            opacity: 1;
+            /* Garante opacidade total inicialmente */
+            transition: opacity 0.3s ease;
+            /* Suaviza a transição de opacidade */
         }
 
         @keyframes scroll {
@@ -347,6 +366,7 @@
                 transform: translateX(-100%);
             }
         }
+
 
 
         /*===================*/
@@ -610,7 +630,7 @@
             }
         }
 
-        /*========Btndiv2========*/
+        /*========Btnd5iv2========*/
 
         #buttondiv2 {
             margin-top: 1rem;
@@ -624,7 +644,7 @@
         }
 
         #btn5 {
-            margin: 0px;
+            margin-bottom: 2rem;
             border-radius: 68px;
             background: #57AE6C;
             display: flex;
@@ -1354,7 +1374,7 @@
         .nomesDiv5 {
             display: flex;
             width: 30%;
-            justify-content: space-between;
+            justify-content: center;
         }
 
         #Silvia {
@@ -1408,10 +1428,13 @@
             border-radius: 10px;
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly; /* Alinhamento consistente */
+            justify-content: flex-start;
+            /* Alinha o conteúdo ao topo */
             align-items: center;
-            padding: -10rem; /* Ajuste de padding para manter o espaço interno */
-            height: 250px; /* Definir uma altura mínima padrão */
+            padding: 1rem;
+            /* Reduz o padding para ajustar o espaço */
+            height: 250px;
+            /* Definir uma altura mínima padrão */
         }
 
         .slide p {
@@ -1422,7 +1445,8 @@
             text-align: center;
             color: #000000;
             max-width: 90%;
-            /* Limita a largura do texto para que não fique muito largo */
+            margin-bottom: 5px;
+            /* Diminui o espaço entre os parágrafos */
         }
 
         @media (max-width: 768px) {
@@ -1447,13 +1471,13 @@
         }
 
         #prev {
-            top: 4.5rem;
+            top: 3rem;
             left: 1rem;
             /* Ajuste mais próximo à esquerda */
         }
 
         #next {
-            top: 4.5rem;
+            top: 3rem;
             right: 1rem;
             /* Ajuste mais próximo à direita */
         }
@@ -1461,6 +1485,7 @@
         #rodapeSlider {
             width: 30%;
             height: 20%;
+            margin-top: -5px;
         }
 
         /*===================*/
