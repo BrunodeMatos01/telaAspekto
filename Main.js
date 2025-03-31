@@ -10,18 +10,18 @@ document.querySelector("#next").addEventListener("click", () => {
         slides.style.transform = `translateX(-${currentIndex * 100}%)`;
     }
 });
+document.getElementById('customForm').addEventListener('submit', function (event) {
+    event.preventDefault();  // Previne o envio padrão do formulário
 
-document.getElementById("customForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Impede o envio do formulário se houver erro
+    // Captura os valores dos campos do formulário
+    let nome = document.getElementById('nome').value;
+    let email = document.getElementById('email').value;
+    let telefone = document.getElementById('telefone').value;
+    let empresa = document.getElementById('empresa').value;
+    let cargo = document.getElementById('cargo').value;
+    let num_func = document.getElementById('num-func').value;
+    let mensagem = document.getElementById('mensagem').value;
 
-    let nome = document.getElementById("nome").value.trim();
-    let email = document.getElementById("email").value.trim();
-    let telefone = document.getElementById("telefone").value.trim();
-    let empresa = document.getElementById("empresa").value.trim();
-    let cargo = document.getElementById("cargo").value;
-    let numFunc = document.getElementById("num-func").value;
-    let mensagem = document.getElementById("mensagem").value.trim();
-    
     // Validação do e-mail
     let regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!regexEmail.test(email)) {
@@ -29,35 +29,32 @@ document.getElementById("customForm").addEventListener("submit", function(event)
         return;
     }
 
-    // Validação do telefone (apenas números e formato correto)
-    let regexTelefone = /^(\d{2})9?\d{8}$/; // Exemplo válido: 11987654321
+    // Validação do telefone
+    let regexTelefone = /^(\d{2})9?\d{8}$/;
     if (!regexTelefone.test(telefone)) {
         alert("Por favor, insira um telefone válido com DDD (Ex: +55(11)987654321).");
         return;
     }
 
-    // Inicializar o EmailJS
-    emailjs.init('Xy7BiQ8nwvim4-FWq');  // Substitua pela sua chave pública
-
-    // Dados do template para enviar ao email
+   function sendMail() {
     let templateParams = {
-        nome: nome,
-        email: email,
-        telefone: telefone,
-        empresa: empresa,
-        cargo: cargo,
-        num_func: numFunc,
-        mensagem: mensagem,
-    };
+        nome : document.getElementById('nome').value,
+        email : document.getElementById('email').value,
+        telefone : document.getElementById('telefone').value,
+        empresa : document.getElementById('empresa').value,
+        cargo : document.getElementById('cargo').value,
+        num_func : document.getElementById('num-func').value,
+        mensagem : document.getElementById('mensagem').value,
+    }
+   }
 
-    // Envia o email usando o EmailJS
     emailjs.send('service_efsze7f', 'template_2q68ras', templateParams)
-        .then(function(response) {
-            // Se tudo estiver certo, alerta o usuário que a mensagem foi enviada
-            alert('Mensagem enviada com sucesso!');
-        }, function(error) {
-            // Caso haja erro no envio
-            alert('Falha no envio. Tente novamente.');
+        .then(function (response) {
+            console.log('Email enviado com sucesso!', response);
+            alert("E-mail enviado com sucesso!");
+        }, function (error) {
+            console.log('Falha no envio do e-mail', error);
+            alert("Houve um erro ao enviar o e-mail. Tente novamente mais tarde.");
         });
 });
 
