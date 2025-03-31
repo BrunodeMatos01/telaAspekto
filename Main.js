@@ -10,18 +10,6 @@ document.querySelector("#next").addEventListener("click", () => {
         slides.style.transform = `translateX(-${currentIndex * 100}%)`;
     }
 });
-document.getElementById('customForm').addEventListener('submit', function (event) {
-    event.preventDefault();  // Previne o envio padrão do formulário
-
-    // Captura os valores dos campos do formulário
-    let nome = document.getElementById('nome').value;
-    let email = document.getElementById('email').value;
-    let telefone = document.getElementById('telefone').value;
-    let empresa = document.getElementById('empresa').value;
-    let cargo = document.getElementById('cargo').value;
-    let num_func = document.getElementById('num-func').value;
-    let mensagem = document.getElementById('mensagem').value;
-
     // Validação do e-mail
     let regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!regexEmail.test(email)) {
