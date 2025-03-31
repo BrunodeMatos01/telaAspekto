@@ -36,7 +36,7 @@ document.getElementById("customForm").addEventListener("submit", function(event)
         return;
     }
 
-    // Inicializar o EmailJS (lembre-se de substituir pelo seu public key)
+    // Inicializar o EmailJS
     emailjs.init('Xy7BiQ8nwvim4-FWq');  // Substitua pela sua chave pública
 
     // Dados do template para enviar ao email
@@ -60,3 +60,4 @@ document.getElementById("customForm").addEventListener("submit", function(event)
             alert('Falha no envio. Tente novamente.');
         });
 });
+
