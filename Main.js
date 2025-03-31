@@ -1,3 +1,5 @@
+emailjs.init('YOUR_USER_ID');   
+
 const slides = document.querySelector("#slides");
 const slideCount = document.querySelectorAll(".slide").length;
 let currentIndex = 0;
@@ -34,10 +36,27 @@ document.getElementById("customForm").addEventListener("submit", function(event)
         return;
     }
 
-    // Se tudo estiver correto, monta a mensagem e envia para o WhatsApp
-    let telefoneDestino = "55SEUNUMERO"; // Substitua pelo seu número com DDD
-    let texto = `Olá!%0A%0A*Nome:* ${nome}%0A*E-mail:* ${email}%0A*Telefone:* ${telefone}%0A*Empresa:* ${empresa}%0A*Cargo:* ${cargo}%0A*Número de Funcionários:* ${numFunc}%0A*Mensagem:* ${mensagem}`;
-    let url = `https://api.whatsapp.com/send?phone=${telefoneDestino}&text=${texto}`;
+    // Inicializar o EmailJS (lembre-se de substituir pelo seu public key)
+    emailjs.init('Xy7BiQ8nwvim4-FWq');  // Substitua pela sua chave pública
 
-    window.open(url, "_blank");
+    // Dados do template para enviar ao email
+    let templateParams = {
+        nome: nome,
+        email: email,
+        telefone: telefone,
+        empresa: empresa,
+        cargo: cargo,
+        num_func: numFunc,
+        mensagem: mensagem,
+    };
+
+    // Envia o email usando o EmailJS
+    emailjs.send('service_efsze7f', 'template_2q68ras', templateParams)
+        .then(function(response) {
+            // Se tudo estiver certo, alerta o usuário que a mensagem foi enviada
+            alert('Mensagem enviada com sucesso!');
+        }, function(error) {
+            // Caso haja erro no envio
+            alert('Falha no envio. Tente novamente.');
+        });
 });
