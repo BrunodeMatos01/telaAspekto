@@ -42,7 +42,7 @@ function sendMail() {
     const telefone = document.getElementById("telefone").value;
     const empresa = document.getElementById("empresa").value;
     const cargo = document.getElementById("cargo").value;
-    const numFunc = document.getElementById("num-func").value;
+    const num_func = document.getElementById("num-func").value;
     const mensagem = document.getElementById("mensagem").value;
 
     // Validações
@@ -63,7 +63,7 @@ function sendMail() {
         telefone: telefone,
         empresa: empresa,
         cargo: cargo,
-        num_funcionarios: numFunc,
+        num_func: num_func,
         mensagem: mensagem,
     };
 
