@@ -1,3 +1,4 @@
+
 // Carrossel de slides
 const slides = document.querySelector("#slides");
 const slideCount = document.querySelectorAll(".slide").length;
@@ -79,5 +80,8 @@ function sendMail() {
     // Evita o comportamento padrão do formulário
     return false;
 }
+
+
+
 
 
