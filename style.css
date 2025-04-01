@@ -59,6 +59,17 @@
             justify-content: space-around;
         }
 
+        @media (max-width: 768px) {
+            .hrefs {
+                width: 20rem;
+                margin-top: 0.4em;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+            }
+        }
+
         .hrefs p {
             color: #FFF;
             font-family: "Montserrat", sans-serif;

@@ -1,5 +1,38 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const menu = document.querySelector(".hrefs");
 
-// Carrossel de slides
+    menuToggle.addEventListener("click", function() {
+        menu.classList.toggle("active");
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const slides = document.getElementById("slides");
+    let startX = 0;
+    let endX = 0;
+
+    slides.addEventListener("touchstart", function (event) {
+        startX = event.touches[0].clientX; // Captura a posição inicial do toque
+    });
+
+    slides.addEventListener("touchmove", function (event) {
+        endX = event.touches[0].clientX; // Atualiza a posição conforme o dedo se move
+    });
+
+    slides.addEventListener("touchend", function () {
+        let difference = startX - endX;
+        
+        if (difference > 50) {
+            // Deslizou para a esquerda (próximo slide)
+            document.getElementById("next").click();
+        } else if (difference < -50) {
+            // Deslizou para a direita (slide anterior)
+            document.getElementById("prev").click();
+        }
+    });
+});
+
 const slides = document.querySelector("#slides");
 const slideCount = document.querySelectorAll(".slide").length;
 let currentIndex = 0;
