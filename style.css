@@ -304,6 +304,7 @@
             padding: 0px;
         }
 
+
         #textEntreDivs {
             display: flex;
             align-items: center;
@@ -329,13 +330,77 @@
             align-items: center;
             justify-content: center;
             overflow: hidden;
-            /* Garante que as imagens fiquem dentro da div */
             position: relative;
-            width: 80%;
+            width: 100%;
             height: 6em;
             mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
             padding: 0;
-            /* Remove padding para evitar que o conteúdo saia */
+        }
+
+        @media(max-width: 1475px) {
+            #textEntreDivs {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 70%;
+                height: 4em;
+            }
+
+            #textEntreDivs span {
+                color: #140024;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 18.764px;
+                font-weight: 500;
+                line-height: 17.734px;
+            }
+
+            #textCarrosselEntre {
+                width: 100vw;
+            }
+        }
+        @media(max-width: 1112px) {
+            #textEntreDivs {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 90%;
+                height: 4em;
+            }
+
+            #textEntreDivs span {
+                color: #140024;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 15.764px;
+                font-weight: 500;
+                line-height: 17.734px;
+            }
+
+            #textCarrosselEntre {
+                width: 100vw;
+            }
+        }
+        @media(max-width: 768px) {
+
+            #textEntreDivs {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 90%;
+                height: 4em;
+            }
+
+            #textEntreDivs span {
+                color: #140024;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 14.764px;
+                font-weight: 500;
+                line-height: 17.734px;
+            }
+
+            #textCarrosselEntre {
+                width: 100vw;
+            }
+            
         }
 
         .img-track {
