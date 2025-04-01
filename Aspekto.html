@@ -9,15 +9,8 @@
     <title>aspecto</title>
 </head>
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-    (function () {
-        emailjs.init({
-            publicKey: "Xy7BiQ8nwvim4-FWq",
-        });
-    })();
-</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
 
 <body>
     <nav>
@@ -487,6 +480,7 @@
             <button id="next">
                 <img src="img/Vector (1).png" alt="Next">
             </button>
+            
         </div>
         <div class="nomesDiv5">
 
@@ -522,7 +516,7 @@
                 </button>
             </div>
             <div id="Formdiv6">
-                <form action="#" method="POST" id="customForm">
+                <form onsubmit="return sendMail()" method="POST" id="customForm">
                     <div class="input-row">
                         <div class="input-group">
                             <label for="nome">Nome*</label>
@@ -533,18 +527,18 @@
                             <input type="email" id="email" name="email" required>
                         </div>
                     </div>
-
+                
                     <div class="input-row">
                         <div class="input-group">
                             <label for="telefone">Telefone*</label>
-                            <input type="tel" id="telefone" name="telefone" placeholder="+55" required>
+                            <input type="tel" id="telefone" name="telefone" placeholder="Ex(11)********" required>
                         </div>
                         <div class="input-group">
                             <label for="empresa">Empresa*</label>
                             <input type="text" id="empresa" name="empresa" required>
                         </div>
                     </div>
-
+                
                     <div class="input-row">
                         <div class="input-group">
                             <label for="cargo">Cargo*</label>
@@ -567,16 +561,19 @@
                             </select>
                         </div>
                     </div>
-
+                
                     <div class="input-group">
                         <label for="mensagem">Mensagem*</label>
                         <textarea id="mensagem" name="mensagem" rows="2" required></textarea>
                     </div>
-
+                
                     <div class="submit-btn">
-                        <button type="submit" onclick="sendMail()"><img src="img/Enviar (3).png" alt="Enviar"></button>
+                        <button type="submit">
+                            <img src="img/Enviar (3).png" alt="Enviar">
+                        </button>
                     </div>
                 </form>
+                
             </div>
         </div>
         <div id="Linha"></div>

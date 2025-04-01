@@ -1,5 +1,4 @@
-emailjs.init('YOUR_USER_ID');   
-
+// Carrossel de slides
 const slides = document.querySelector("#slides");
 const slideCount = document.querySelectorAll(".slide").length;
 let currentIndex = 0;
@@ -10,39 +9,75 @@ document.querySelector("#next").addEventListener("click", () => {
         slides.style.transform = `translateX(-${currentIndex * 100}%)`;
     }
 });
-    // Validação do e-mail
-    let regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!regexEmail.test(email)) {
-        alert("Por favor, insira um e-mail válido.");
-        return;
-    }
 
-    // Validação do telefone
-    let regexTelefone = /^(\d{2})9?\d{8}$/;
-    if (!regexTelefone.test(telefone)) {
-        alert("Por favor, insira um telefone válido com DDD (Ex: +55(11)987654321).");
-        return;
+document.querySelector("#prev").addEventListener("click", () => {
+    if (currentIndex > 0) {
+        currentIndex--;
+        slides.style.transform = `translateX(-${currentIndex * 100}%)`;
     }
-
-   function sendMail() {
-    let templateParams = {
-        nome : document.getElementById('nome').value,
-        email : document.getElementById('email').value,
-        telefone : document.getElementById('telefone').value,
-        empresa : document.getElementById('empresa').value,
-        cargo : document.getElementById('cargo').value,
-        num_func : document.getElementById('num-func').value,
-        mensagem : document.getElementById('mensagem').value,
-    }
-   }
-
-    emailjs.send('service_efsze7f', 'template_2q68ras', templateParams)
-        .then(function (response) {
-            console.log('Email enviado com sucesso!', response);
-            alert("E-mail enviado com sucesso!");
-        }, function (error) {
-            console.log('Falha no envio do e-mail', error);
-            alert("Houve um erro ao enviar o e-mail. Tente novamente mais tarde.");
-        });
 });
+
+// Função para validar e-mail
+function validarEmail(email) {
+    let regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regexEmail.test(email);
+}
+
+// Função para validar telefone
+function validarTelefone(telefone) {
+    let regexTelefone = /^(\d{2})9?\d{8}$/;
+    return regexTelefone.test(telefone);
+}
+
+// Inicializando o EmailJS
+(function() {
+    emailjs.init("Xy7BiQ8nwvim4-FWq"); // Substitua pelo seu User ID do EmailJS
+})();
+
+// Função para enviar o e-mail
+function sendMail() {
+    const nome = document.getElementById("nome").value;
+    const email = document.getElementById("email").value;
+    const telefone = document.getElementById("telefone").value;
+    const empresa = document.getElementById("empresa").value;
+    const cargo = document.getElementById("cargo").value;
+    const numFunc = document.getElementById("num-func").value;
+    const mensagem = document.getElementById("mensagem").value;
+
+    // Validações
+    if (!validarEmail(email)) {
+        alert("Por favor, insira um e-mail válido.");
+        return false;
+    }
+
+    if (!validarTelefone(telefone)) {
+        alert("Por favor, insira um telefone válido com DDD (Ex: (11)987654321).");
+        return false;
+    }
+
+    // Configura os parâmetros para o e-mail
+    const templateParams = {
+        nome: nome,
+        email: email,
+        telefone: telefone,
+        empresa: empresa,
+        cargo: cargo,
+        num_funcionarios: numFunc,
+        mensagem: mensagem,
+    };
+
+    // Enviando o e-mail via EmailJS
+    emailjs.send("service_efsze7f", "template_2q68ras", templateParams)
+        .then(function(response) {
+            console.log("Formulário Enviado!", response.status, response.text);
+            alert("Formulário Enviado!");
+        }, function(error) {
+            console.log("Erro ao enviar formulário", error);
+            alert("Erro ao enviar o Formulário, tente novamente.");
+        });
+
+    // Evita o comportamento padrão do formulário
+    return false;
+}
+
 
