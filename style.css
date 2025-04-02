@@ -148,14 +148,12 @@
                 z-index: 1;
                 border-radius: 13px;
             }
-    
             .menu-dropdown a {
                 color: white;
                 padding: 12px 16px;
                 text-decoration: none;
                 display: block;
             }
-    
             .menu-dropdown a:hover {
                 background-color: #390061;
                 border-radius: 10px;
