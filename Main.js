@@ -1,10 +1,18 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const menuToggle = document.querySelector(".menu-toggle");
-    const menu = document.querySelector(".hrefs");
+function toggleMenu() {
+    var menu = document.getElementById("menuDropdown");
+    menu.style.display = (menu.style.display === "block") ? "none" : "block";
+}
 
-    menuToggle.addEventListener("click", function() {
-        menu.classList.toggle("active");
-    });
+function closeMenu() {
+    document.getElementById("menuDropdown").style.display = "none";
+}
+
+document.addEventListener("click", function(event) {
+    var menu = document.getElementById("menuDropdown");
+    var button = document.querySelector(".menu-btn");
+    if (!menu.contains(event.target) && !button.contains(event.target)) {
+        menu.style.display = "none";
+    }
 });
 
 document.addEventListener("DOMContentLoaded", function () {
