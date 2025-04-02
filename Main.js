@@ -1,18 +1,25 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const menuButton = document.getElementById("menuButton");
+    const menuBtn = document.querySelector(".menu-btn");
     const menuDropdown = document.getElementById("menuDropdown");
-    
-    if (menuButton && menuDropdown) {
-        menuButton.addEventListener("click", function (event) {
-            event.stopPropagation(); // Impede que o clique se propague para o document
-            menuDropdown.style.display = menuDropdown.style.display === "block" ? "none" : "block";
-        });
-    }
-    
+    const menuLinks = document.querySelectorAll(".menu-dropdown a");
+
+    // Abrir menu ao passar o mouse
+    menuBtn.addEventListener("mouseenter", function () {
+        menuDropdown.classList.add("show");
+    });
+
+    // Fechar ao clicar fora ou em um item do menu
     document.addEventListener("click", function (event) {
-        if (menuDropdown && menuButton && !menuButton.contains(event.target) && !menuDropdown.contains(event.target)) {
-            menuDropdown.style.display = "none";
+        if (!menuBtn.contains(event.target) && !menuDropdown.contains(event.target)) {
+            menuDropdown.classList.remove("show");
         }
+    });
+
+    // Fechar o menu ao clicar em qualquer link dentro dele
+    menuLinks.forEach(link => {
+        link.addEventListener("click", function () {
+            menuDropdown.classList.remove("show");
+        });
     });
 });
 
@@ -102,7 +109,7 @@ function sendMail() {
     }
 
     if (!validarTelefone(telefone)) {
-        alert("Por favor, insira um telefone válido com DDD (Ex: (11)987654321).");
+        alert("Por favor, insira um telefone válido com DDD (Ex: 11987654321).");
         return false;
     }
 
