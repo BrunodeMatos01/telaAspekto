@@ -35,7 +35,7 @@
         /*===================*/
 
         /*========Nav========*/
-        @media (min-width: 1500px) {
+        @media (min-width: 1460px) {
             #navMv {
                 display: none;
             }
