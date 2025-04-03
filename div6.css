@@ -38,7 +38,6 @@
         flex-direction: column;
         width: 80%;
         max-width: 460px;
-        margin-top: 20px;
     }
 }
 
@@ -120,7 +119,7 @@
     #Qual {
         font-size: 24px;
         text-align: start;
-        margin: 0px;
+        margin-bottom: 10px;
     }
 }
 
@@ -137,7 +136,7 @@
     #suaEmpresa {
         font-size: 14px;
         text-align: start;
-        margin-bottom: 0px;
+        margin: 0px;
     }
 }
 
@@ -208,7 +207,7 @@
     #Linha {
         width: 60%;
         max-width: 460px;
-        margin-top: 150px;
+        margin-top: 120px;
     }
 }
 
