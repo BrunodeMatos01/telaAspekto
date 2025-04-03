@@ -107,8 +107,7 @@
 
 @media (max-width: 460px) {
     #textContainer {
-        width: 270px;
-        max-width: 460px;
+        max-width: 100%;
         text-align: start;
     }
 }
@@ -315,7 +314,7 @@
 
 @media (max-width: 460px) {
     #imaginaria {
-        width: 30px;
+        width: 10px;
     }
 }
 
@@ -325,11 +324,6 @@
     margin-top: 1rem;
 }
 
-@media (max-width: 460px) {
-    #buttondiv2 {
-        margin-top: 20px;
-    }
-}
 
 #btn5 {
     margin-bottom: 2rem;
@@ -348,7 +342,7 @@
         width: 230px;
         height: 40px;
         margin-bottom: 0;
-        margin-top: 100px;
+        margin-top: 130px;
     }
 }
 
