@@ -42,6 +42,42 @@
     margin-right: 10px;
 }
 
+.input-rowS {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+}
+
+.input-groupS {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.input-groupS:first-child {
+    margin-left: 7px;
+}
+
+@media (max-width: 460px)  {
+    .input-rowS {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-right: 10px;
+    }
+    .input-groupS {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+    
+    .input-groupS:last-child {
+        margin-left: 10px;
+    }
+}
+
 label {
     font-size: 12px;
     margin-bottom: 5px;
@@ -104,6 +140,11 @@ textarea {
 
 @media (max-width: 460px) {
     #cargoL {
+        margin-top: 15px;
+    }
+}
+@media (max-width: 375px) {
+    #nomeL {
         margin-top: 15px;
     }
 }

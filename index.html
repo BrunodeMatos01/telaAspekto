@@ -640,7 +640,7 @@
                 <form onsubmit="return sendMail()" method="POST" id="customForm">
                     <div class="input-row">
                         <div class="input-group">
-                            <label for="nome">Nome*</label>
+                            <label for="nome" id="nomeL">Nome*</label>
                             <input type="text" id="nome" name="nome" required>
                         </div>
                         <div class="input-group">
@@ -660,8 +660,8 @@
                         </div>
                     </div>
 
-                    <div class="input-row">
-                        <div class="input-group">
+                    <div class="input-rowS">
+                        <div class="input-groupS">
                             <label for="cargo" id="cargoL">Cargo*</label>
                             <select id="cargo" name="cargo" required>
                                 <option value="" disabled selected>Selecione</option>
@@ -671,7 +671,7 @@
                                 <option value="Outro">Outro</option>
                             </select>
                         </div>
-                        <div class="input-group">
+                        <div class="input-groupS">
                             <label for="num-func">Número de funcionários*</label>
                             <select id="num-func" name="num-func" required>
                                 <option value="" disabled selected>Selecione</option>
