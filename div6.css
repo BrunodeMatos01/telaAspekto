@@ -277,12 +277,13 @@
     flex-shrink: 0;
 }
 
-@media (max-width: 768px) {
-    #Aspekto {
-        width: 101px;
+@media (max-width: 460px) {
+    #Aspekto svg{
+        width: 100px;
         height: 22px;
         flex-shrink: 0; 
-        
+        margin: 0;
+        padding: 0;
     }
 }
 
@@ -300,7 +301,8 @@
     #Termos {
         font-size: 10px;
         text-align: center;
-       
+       padding: 0;
+       margin: 0;
     }
 }
 
