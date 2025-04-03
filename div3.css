@@ -53,6 +53,12 @@
         line-height: 30px;
     }
 }
+@media (max-width: 375px) {
+    #TextEstrategiadiv3 {
+        font-size: 16px;
+        line-height: 30px;
+    }
+}
 
 #TextMarcadiv3 {
     color: #FFF;
