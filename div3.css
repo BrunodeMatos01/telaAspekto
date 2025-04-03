@@ -78,7 +78,7 @@
     justify-content: space-between;
     align-items: center;
     width: 1100px;
-    margin: auto;
+    margin: 90px;
 }
 
 @media (max-width: 460px) {
