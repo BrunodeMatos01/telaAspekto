@@ -90,7 +90,7 @@
 
 .img-track {
     display: flex;
-    animation: scroll 25s linear infinite;
+    animation: scroll 45s linear infinite;
     gap: 2rem;
     /* Diminui o gap entre as imagens */
     width: fit-content;
@@ -98,7 +98,7 @@
 }
 
 .img-track img {
-    width: 7.2rem;
+    width: 5.4rem;
     margin-top: 0.5em;
     /* Adiciona uma pequena margem em cima e em baixo */
     margin-bottom: 0.5em;

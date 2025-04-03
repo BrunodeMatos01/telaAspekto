@@ -58,11 +58,15 @@
 
     @media (max-width: 460px) {
         #desenhoVerdeSvg {
-            width: 100%;
-            max-width: 460px;
-            height: 100%;
-            transform: translateX(20px);
+            display: none;
         }
+
+        #Desenhoverde {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
     }
 }
 
@@ -83,15 +87,7 @@
 /* Ajustes para telas menores */
 @media (max-width: 460px) {
     #imagemFerro1 {
-        position: absolute;
-        width: 120px;
-        height: 50%;
-        border-radius: 10px;
-        background: url(img/Rectangle\ 5\ \(1\).png) lightgray 50% / cover no-repeat;
-        z-index: 1;
-        margin: auto;
-        top: 210px;
-        right: 10px;
+        display: none;
     }
 }
 
@@ -108,8 +104,10 @@
 
 @media (max-width: 460px) {
     #textContainer {
-        max-width: 100%;
-        text-align: start;
+        width: 100vw;
+        margin: 0 auto;
+        text-align: left;
+        font-family: 'Montserrat', sans-serif;
     }
 }
 
@@ -134,7 +132,7 @@
 
 @media (max-width: 460px) {
     #divDotext {
-        width: 260px;
+        width: 330px;
         height: 550px;
     }
 }
@@ -150,7 +148,7 @@
 
 @media (max-width: 460px) {
     #textdiv1 {
-        font-size: 28px;
+        font-size: 30px;
         text-align: start;
     }
 }
@@ -164,7 +162,7 @@
 
 @media (max-width: 460px) {
     #marketing {
-        font-size: 28px;
+        font-size: 30px;
         text-align: start;
     }
 }
@@ -197,7 +195,7 @@
     }
 
     #textdiv2Mv {
-        font-size: 15px;
+        font-size: 20px;
         margin-bottom: 18px;
     }
 }
@@ -263,6 +261,15 @@
 
 @media (max-width: 460px) {
 
+    #textFilha1div2,
+    #textFilha2div2,
+    #textFilha3div2 {
+        width: 300px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
     #textFilha1div2 svg,
     #textFilha2div2 svg,
     #textFilha3div2 svg {
@@ -270,9 +277,9 @@
     }
 
     .textfilha1div2span {
-        margin-bottom: 13px;
+        width: 300px;
     }
-    
+
 }
 
 
@@ -305,7 +312,7 @@
 @media (max-width: 460px) {
     #Aaspekto {
         line-height: 10px;
-        font-size: 16px;
+        font-size: 20px;
     }
 }
 
@@ -316,7 +323,7 @@
 
 @media (max-width: 460px) {
     #imaginaria {
-        width: 30px;
+        width: 50px;
     }
 }
 
@@ -344,7 +351,8 @@
         width: 230px;
         height: 40px;
         margin-bottom: 0;
-        margin-top: 40%;
+        margin-top: 10%;
+        margin-left: 40px;
     }
 }
 
