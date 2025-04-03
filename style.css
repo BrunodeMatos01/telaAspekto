@@ -127,7 +127,7 @@
                 background-color: #260041;
                 display: flex;
                 flex-direction: row;
-                justify-content: space-evenly;
+                justify-content: space-around;
                 align-items: center;
                 position: fixed;
                 top: 0;
@@ -137,11 +137,15 @@
             }
 
             .menu-container {
+                margin: 0px;
+                padding: 0px;
                 position: relative;
                 display: inline-block;
             }
 
             .menu-btn {
+                margin: 0px;
+                padding: 0px;
                 background: none;
                 border: none;
                 font-size: 2rem;
@@ -161,6 +165,8 @@
 
             .menu-dropdown a {
                 color: white;
+                font-size: 20px;
+                font-family: "Montserrat", sans-serif;
                 padding: 12px 16px;
                 text-decoration: none;
                 display: block;
