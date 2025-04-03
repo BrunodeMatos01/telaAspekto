@@ -85,11 +85,12 @@
     #imagemFerro1 {
         position: absolute;
         width: 120px;
-        height: 60%;
+        height: 50%;
         border-radius: 10px;
         background: url(img/Rectangle\ 5\ \(1\).png) lightgray 50% / cover no-repeat;
         z-index: 1;
         margin: auto;
+        top: 210px;
         right: 10px;
     }
 }
@@ -133,7 +134,7 @@
 
 @media (max-width: 460px) {
     #divDotext {
-        width: 280px;
+        width: 260px;
         height: 550px;
     }
 }
@@ -149,7 +150,7 @@
 
 @media (max-width: 460px) {
     #textdiv1 {
-        font-size: 23px;
+        font-size: 28px;
         text-align: start;
     }
 }
@@ -163,7 +164,7 @@
 
 @media (max-width: 460px) {
     #marketing {
-        font-size: 23px;
+        font-size: 28px;
         text-align: start;
     }
 }
@@ -197,7 +198,7 @@
 
     #textdiv2Mv {
         font-size: 15px;
-        margin-bottom: 13px;
+        margin-bottom: 18px;
     }
 }
 
@@ -304,7 +305,7 @@
 @media (max-width: 460px) {
     #Aaspekto {
         line-height: 10px;
-        font-size: 13px;
+        font-size: 16px;
     }
 }
 
@@ -315,7 +316,7 @@
 
 @media (max-width: 460px) {
     #imaginaria {
-        width: 10px;
+        width: 30px;
     }
 }
 
@@ -343,7 +344,7 @@
         width: 230px;
         height: 40px;
         margin-bottom: 0;
-        margin-top: 130px;
+        margin-top: 40%;
     }
 }
 
