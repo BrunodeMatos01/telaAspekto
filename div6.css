@@ -65,7 +65,6 @@
         align-items: start;
         justify-content: center;
         margin: 0px;
-        gap: 10px;
     }
 }
 
@@ -138,6 +137,7 @@
     #suaEmpresa {
         font-size: 14px;
         text-align: start;
+        margin-bottom: 0px;
     }
 }
 
@@ -206,7 +206,7 @@
 
 @media (max-width: 460px) {
     #Linha {
-        width: 90%;
+        width: 60%;
         max-width: 460px;
         margin-top: 150px;
     }
