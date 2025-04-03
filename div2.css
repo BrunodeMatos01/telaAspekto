@@ -19,7 +19,7 @@
         position: relative;
         padding: 0;
         margin: 0;
-        height: 650px;
+        height: 550px;
         width: 100%;
         max-width: 460px;
         background-color: white;
@@ -148,6 +148,7 @@
 
 @media (max-width: 460px) {
     #textdiv1 {
+        margin-top: 20px;
         font-size: 30px;
         text-align: start;
     }
@@ -350,7 +351,7 @@
     #btn5 {
         width: 230px;
         height: 40px;
-        margin-bottom: 0;
+        margin-bottom: 0px;
         margin-top: 10%;
         margin-left: 40px;
     }
