@@ -197,7 +197,7 @@
 
     #textdiv2Mv {
         font-size: 15px;
-        margin-bottom: 5px;
+        margin-bottom: 13px;
     }
 }
 
@@ -303,6 +303,7 @@
 
 @media (max-width: 460px) {
     #Aaspekto {
+        line-height: 10px;
         font-size: 13px;
     }
 }
