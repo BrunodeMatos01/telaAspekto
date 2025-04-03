@@ -1,0 +1,345 @@
+/*========Div 6========*/
+#div6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    height: 727.608px;
+    width: 100%;
+    background: url(img/Rectangle\ \(2\).png) lightgray 0px 0px / 100% 100% no-repeat;
+    flex-shrink: 0;
+}
+
+@media (max-width: 460px) {
+    #div6 {
+        width: 100%;
+        max-width: 460px;
+        height: 100vh;
+    }
+}
+
+/*===================*/
+
+/*========Div Geral6========*/
+#DivGeral6 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 83vw;
+    height: 450px;
+    margin-top: 0px;
+}
+
+@media (max-width: 460px) {
+    #DivGeral6 {
+        flex-direction: column;
+        width: 80%;
+        max-width: 460px;
+        margin-top: 20px;
+    }
+}
+
+/*===================*/
+
+/*========Text Geral6========*/
+#TextGeradiv6 {
+    width: 330px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    margin-left: 200px;
+}
+
+@media (max-width: 460px) {
+    #TextGeradiv6 {         
+        width: 100%;
+        max-width: 460px;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        margin: 0px;
+        gap: 10px;
+    }
+}
+
+/*===================*/
+
+/*========Div Text "Qual" e "Se sua"6========*/
+#Text1div6 {
+    display: flex;
+    width: 330px;
+    height: 81px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+@media (max-width: 460px) {
+    #Text1div6 {
+        width: 100%;
+        max-width: 460px;
+    }
+}
+
+#Text2div6 {
+    display: flex;
+    width: 292px;
+    height: 74px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+@media (max-width: 460px) {
+    #Text2div6 {
+        width: 100%;
+        max-width: 460px;
+    }
+}
+
+/*===================*/
+
+/*========Text div6========*/
+#Qual {
+    color: #FFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 30.804px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 31.89px;
+    letter-spacing: 0.745px;
+}
+
+@media (max-width: 768px) {
+    #Qual {
+        font-size: 24px;
+        text-align: start;
+        margin: 0px;
+    }
+}
+
+#suaEmpresa {
+    color: #FFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 18px;
+}
+
+@media (max-width: 768px) {
+    #suaEmpresa {
+        font-size: 14px;
+        text-align: start;
+    }
+}
+
+/*===================*/
+
+
+
+/*========Btn div6========*/
+#btn6 {
+    margin: 0px;
+    border-radius: 68px;
+    background: #57AE6C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    padding: 0.3em 1em;
+    border: solid 0px;
+}
+
+@media (max-width: 768px) {
+    #btn6 {
+        display: none;
+    }
+}
+
+#btn6:hover {
+    background-color: #258a5c;
+}
+
+#btn6 svg {
+    display: flex;
+    width: 1.3rem;
+    height: 1.3rem;
+    background-color: #150024;
+    border-radius: 50%;
+    padding: 0.2rem;
+}
+
+#vamos6 {
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    margin-right: 1rem;
+    padding: 0.4rem;
+}
+
+@media (max-width: 768px) {
+    #vamos6 {
+        font-size: 12px;
+    }
+}
+
+/*===================*/
+
+/*========Linha div6========*/
+#Linha {
+    width: 500.26px;
+    height: 0.667px;
+    flex-shrink: 0;
+    border-top: 0.667px solid rgba(255, 255, 255, 0.14);
+    margin-top: 4em;
+}
+
+@media (max-width: 460px) {
+    #Linha {
+        width: 60%;
+        max-width: 460px;
+        margin-top: 150px;
+    }
+}
+
+/*===================*/
+
+/*========Footer div6========*/
+#footer {
+    margin-top: 70px;
+}
+
+#footerGeral {
+    width: 960px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 460px) {
+    #footer {
+        width: 100%;
+        max-width: 460px;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 460px) {
+    #footerGeral {
+        width: 100%;
+        max-width: 460px;
+    }
+}
+
+/*===================*/
+
+/*========Div do "Termo"6========*/
+#Text3div6 {
+    display: flex;
+    width: 390.973px;
+    height: 13.333px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+@media (max-width: 460px) {
+    #Text3div6 {
+        width: 40%;
+        max-width: 460px;
+    }
+}
+
+/*===================*/
+
+/*========Footer Text6========*/
+#Aspekto {
+    width: 101px;
+    height: 22px;
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    #Aspekto {
+        width: 101px;
+        height: 22px;
+        flex-shrink: 0; 
+        
+    }
+}
+
+#Termos {
+    color: #FFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26.4px;
+    letter-spacing: 0.667px;
+}
+
+@media (max-width: 460px) {
+    #Termos {
+        font-size: 10px;
+        text-align: center;
+        margin-left: 10px;
+       
+    }
+}
+
+#Icones {
+    display: flex;
+    width: 110px;
+    height: 35px;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (max-width: 460px) {
+    #Icones {
+        display: flex;
+        width: 110px;
+        height: 35px;
+        padding: 10px;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+}
+
+#Be svg,
+#Insta svg,
+#LinkeDin svg,
+#Watts svg {
+    width: 19px;
+    height: 19px;
+}
+
+@media (max-width: 460px) {
+
+    #Be svg,
+    #Insta svg,
+    #LinkeDin svg,
+    #Watts svg {
+        width: 16px;
+        height: 16px;
+    }
+}

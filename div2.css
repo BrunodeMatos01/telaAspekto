@@ -1,0 +1,310 @@
+/*========Div 2========*/
+#div2 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    height: 650px;
+    width: 100%;
+    background-color: white;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    overflow: hidden;
+}
+@media (max-width: 460px) {
+    #div2 {
+        position: relative;
+        padding: 0;
+        margin: 0;
+        height: 650px;
+        width: 100%;
+        background-color: white;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+}
+
+/*===================*/
+
+/*========Desenho Verde========*/
+#Desenhoverde {
+    position: relative;
+    width: 685px;
+    height: 685px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 460px) {
+    #Desenhoverde {
+        position: relative;
+        width: 685px;
+        height: 685px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @media (max-width: 460px) {
+        #desenhoVerdeSvg {
+            width: 100%;
+            height: 100%;
+            transform: translateX(200px);
+        }
+    }
+}
+
+/*===================*/
+
+/*========Imagem div 2========*/
+#imagemFerro1 {
+    position: relative;
+    width: 251px;
+    height: 454px;
+    border-radius: 10px;
+    background: url(img/Rectangle\ 5\ \(1\).png) lightgray 50% / cover no-repeat;
+    z-index: 1;
+    margin: auto;
+    right: 53vh;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 460px) {
+    #imagemFerro1 {
+        position: relative;
+        width: 251px;
+        height: 454px;
+        border-radius: 10px;
+        background: url(img/Rectangle\ 5\ \(1\).png) lightgray 50% / cover no-repeat;
+        z-index: 1;
+        margin: auto;
+        right: 35vh;
+    }
+}
+
+/*===================*/
+
+/*========Text div2========*/
+#textContainer {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 768px) {
+    #textContainer {
+        max-width: 100%;
+        /* Ajusta a largura do container para 100% em telas menores */
+        text-align: center;
+        /* Centraliza o texto */
+    }
+}
+
+#Geraldiv2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+}
+
+#divDotext {
+    width: 100%;
+    height: 100%;
+}
+
+#textdiv1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    font-weight: 400;
+    line-height: 1em;
+    color: #000;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    #textdiv1 {
+        font-size: 28px;
+        /* Reduz o tamanho da fonte em telas pequenas */
+        text-align: center;
+        /* Centraliza o título */
+    }
+}
+
+#marketing {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+    font-weight: 800;
+    color: #150024;
+}
+
+@media (max-width: 768px) {
+    #marketing {
+        font-size: 28px;
+        /* Reduz o tamanho da fonte em telas pequenas */
+        text-align: center;
+        /* Centraliza o texto */
+    }
+}
+
+#textdiv2 {
+    color: #140024;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+#text2div2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+
+    #text2div2 {
+        font-size: 14px;
+        /* Reduz o tamanho da fonte em telas pequenas */
+        text-align: center;
+        /* Centraliza os textos */
+    }
+}
+
+#text4div2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    margin: 0px;
+    padding: 0px;
+    width: 17vw;
+    height: 22vh;
+}
+
+#textFilha1div2,
+#textFilha2div2,
+#textFilha3div2 {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+#text1svg,
+#text2svg,
+#text3svg {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#textFilha1div2 svg,
+#textFilha2div2 svg,
+#textFilha3div2 svg {
+    margin-right: 10px;
+}
+
+#textFilha1div2 span,
+#textFilha2div2 span,
+#textFilha3div2 span {
+    margin-left: 10px;
+}
+
+
+#textdiv1 {
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+}
+
+#marketing {
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+}
+
+#Aaspekto {
+    color: #140024;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+}
+
+#imaginaria {
+    height: 130px;
+    width: 130px;
+}
+
+/*========Btnd5iv2========*/
+
+#buttondiv2 {
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    #buttondiv2 {
+        margin-top: 20px;
+        /* Adiciona margem superior ao botão em telas pequenas */
+    }
+}
+
+#btn5 {
+    margin-bottom: 2rem;
+    border-radius: 68px;
+    background: #57AE6C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    padding: 0.1em 1em;
+    border: solid 0px;
+}
+
+@media (max-width: 768px) {
+    #btn5 {
+        width: 200px;
+        /* Ajusta a largura do botão em telas pequenas */
+        height: 40px;
+        /* Ajusta a altura do botão */
+    }
+}
+
+#btn5:hover {
+    background-color: #258a5c;
+}
+
+#btn5 svg {
+    width: 1.4rem;
+    height: 1.4rem;
+    background-color: #150024;
+    border-radius: 50%;
+    padding: 1px;
+}
+
+#vamos5 {
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.3em;
+    font-weight: 700;
+    line-height: 22px;
+    margin-right: 1rem;
+    padding: 0.5rem;
+}
+
+/*===================*/

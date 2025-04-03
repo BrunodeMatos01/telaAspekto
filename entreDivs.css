@@ -1,0 +1,124 @@
+/*========Carrossel Entre div1 e div2========*/
+
+#Entrediv1div2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 6.2em;
+    background-color: #e6e6e6;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#textEntreDivs {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60%;
+    height: 4em;
+}
+
+#textEntreDivs span {
+    color: #140024;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18.764px;
+    font-weight: 500;
+    line-height: 17.734px;
+}
+
+#textCarrosselEntre {
+    width: 100%;
+}
+
+#carrosselEntredivs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 6em;
+    mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
+    padding: 0;
+}
+
+@media(max-width: 460px) {
+    #textEntreDivs {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 70%;
+        height: 4em;
+    }
+
+    #textEntreDivs span {
+        color: #140024;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18.764px;
+        font-weight: 500;
+        line-height: 17.734px;
+    }
+
+    #textCarrosselEntre {
+        width: 70vw;
+    }
+}
+
+@media(max-width: 960px) {
+    #textEntreDivs {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 90%;
+        height: 4em;
+    }
+
+    #textEntreDivs span {
+        color: #140024;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15.764px;
+        font-weight: 500;
+        line-height: 17.734px;
+    }
+
+    #textCarrosselEntre {
+        width: 100vw;
+    }
+}
+
+.img-track {
+    display: flex;
+    animation: scroll 25s linear infinite;
+    gap: 2rem;
+    /* Diminui o gap entre as imagens */
+    width: fit-content;
+    align-items: center;
+}
+
+.img-track img {
+    width: 7.2rem;
+    margin-top: 0.5em;
+    /* Adiciona uma pequena margem em cima e em baixo */
+    margin-bottom: 0.5em;
+    box-sizing: border-box;
+    opacity: 1;
+    /* Garante opacidade total inicialmente */
+    transition: opacity 0.3s ease;
+    /* Suaviza a transição de opacidade */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+/*===================*/

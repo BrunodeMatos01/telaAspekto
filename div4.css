@@ -1,0 +1,313 @@
+/*========Div 4========*/
+#div4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    height: 650px;
+    width: 100%;
+    background-color: white;
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    #div4 {
+        height: auto;
+        /* Ajusta a altura para tela pequena */
+        padding: 20px;
+        /* Adiciona espaçamento */
+    }
+}
+
+/*===================*/
+
+/*========Imagem div4========*/
+#ImagemDiv4 {
+    width: 241px;
+    height: 390px;
+    flex-shrink: 0;
+    border-radius: 17px;
+    background: url(img/image\ \(4\).png) lightgray -208.361px 0px / 271.383% 100% no-repeat;
+    margin-top: 55px;
+}
+
+@media (max-width: 768px) {
+    #ImagemDiv4 {
+        width: 80%;
+        /* Ajusta a largura da imagem para 80% em telas menores */
+        height: auto;
+        /* Ajusta a altura proporcionalmente */
+        margin-top: 20px;
+        /* Ajusta a margem superior */
+    }
+}
+
+/*===================*/
+
+/*========Div Geral 4========*/
+#Geraldiv4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    gap: 11em;
+    /* Espaçamento entre a imagem e o texto */
+    width: 100%;
+    height: 100vh;
+    /* Ajusta a altura para ocupar a altura total da viewport */
+}
+
+@media (max-width: 768px) {
+    #Geraldiv4 {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+}
+
+/*===================*/
+
+/*========Text div 4========*/
+#TextGeraldiv4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    /* Ajusta para ocupar apenas o necessário */
+    height: auto;
+    flex-shrink: 0;
+    margin: 0px;
+    padding: 0px;
+}
+
+@media (max-width: 768px) {
+    #TextGeraldiv4 {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+}
+
+#Text1div4 {
+    width: 440px;
+    height: 109px;
+    margin-bottom: 1.4em;
+}
+
+@media (max-width: 768px) {
+    #Text1div4 {
+        width: 100%;
+        /* Ajusta a largura para 100% em telas pequenas */
+    }
+}
+
+#Osegredo {
+    color: #140024;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 450;
+    line-height: 39px;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    #Osegredo {
+        font-size: 24px;
+        /* Reduz o tamanho da fonte em telas pequenas */
+    }
+}
+
+#AtraireConverter {
+    color: #140024;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 39px;
+}
+
+@media (max-width: 768px) {
+    #AtraireConverter {
+        font-size: 24px;
+        /* Reduz o tamanho da fonte em telas pequenas */
+    }
+}
+
+#Text2div4 {
+    width: 440px;
+    height: 109px;
+}
+
+#Text3div4 {
+    width: 440px;
+    height: 109px;
+}
+
+
+@media (max-width: 768px) {
+    #Text2div4 {
+        width: 100%;
+        /* Ajusta a largura para 100% em telas pequenas */
+        height: auto;
+        /* Ajusta a altura para se adaptar ao conteúdo */
+    }
+}
+
+#Inboundmarketing {
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16.948px;
+    margin-bottom: 10px;
+    margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+    #Inboundmarketing {
+        font-size: 12px;
+        /* Ajusta o tamanho da fonte */
+    }
+}
+
+#ComoInb {
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 7.763px
+}
+
+#Comofunciona {
+    color: #57AE6C;
+    font-family: "Montserrat", sans-serif;
+    font-size: 17.784px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 11.844px;
+    margin-bottom: 1.3em;
+}
+
+@media (max-width: 768px) {
+    #Comofunciona {
+        font-size: 12px;
+        /* Ajusta o tamanho da fonte */
+    }
+}
+
+#texto1,
+#texto2,
+#texto3 {
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0px;
+    margin: 0px 0px 15px 20px;
+    /* Adiciona um espaçamento entre o ícone e o texto */
+}
+
+@media (max-width: 768px) {
+
+    #texto1,
+    #texto2,
+    #texto3 {
+        font-size: 12px;
+        /* Ajusta o tamanho da fonte */
+    }
+}
+
+#Textsvgdiv4 {
+    width: 100%;
+    height: 100%;
+}
+
+#textsvg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* Espaçamento entre os itens */
+}
+
+#svg1div4,
+#svg2div4,
+#svg3div4 {
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*===================*/
+
+/*========Btn div4========*/
+#buttondiv4 {
+    margin-bottom: 2em;
+}
+
+@media (max-width: 768px) {
+    #buttondiv4 {
+        margin-top: 20px;
+        /* Adiciona margem superior ao botão em telas pequenas */
+    }
+}
+
+#btn4 {
+    margin: 0px;
+    border-radius: 68px;
+    background: #57AE6C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    padding: 0.3em 1em;
+    border: solid 0px;
+}
+
+@media (max-width: 768px) {
+    #btn4 {
+        width: 200px;
+        /* Ajusta a largura do botão em telas pequenas */
+        height: 40px;
+        /* Ajusta a altura do botão */
+    }
+}
+
+#btn4:hover {
+    background-color: #258a5c;
+}
+
+#btn4 svg {
+    width: 1.4rem;
+    height: 1.4rem;
+    background-color: #150024;
+    border-radius: 50%;
+    padding: 1px;
+}
+
+#vamos4 {
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    margin-right: 1rem;
+    padding: 0.4rem;
+}
+
+@media (max-width: 768px) {
+    #vamos4 {
+        font-size: 12px;
+        /* Ajusta o tamanho da fonte do texto no botão */
+    }
+}
+
+/*===================*/
