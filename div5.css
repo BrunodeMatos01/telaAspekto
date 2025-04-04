@@ -302,12 +302,11 @@
     box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
+@media (max-width:460px) {
     #Imagendiv5 {
         width: 100%;
-        /* Ajusta a largura para 100% em telas pequenas */
         height: auto;
-        /* Ajusta a altura proporcionalmente */
+
     }
 }
 
