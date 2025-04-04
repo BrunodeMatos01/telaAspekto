@@ -53,6 +53,7 @@
         line-height: 30px;
     }
 }
+
 @media (max-width: 375px) {
     #TextEstrategiadiv3 {
         font-size: 16px;
@@ -93,7 +94,7 @@
         width: 100%;
         max-width: 460px;
         margin: 0px
-        /* Ajusta a largura para 100% */
+            /* Ajusta a largura para 100% */
     }
 }
 
@@ -113,6 +114,7 @@
 }
 
 @media (max-width: 460px) {
+
     #divfilha1,
     #divfilha2,
     #divfilha3 {
@@ -141,10 +143,10 @@
     #divfilha1 svg,
     #divfilha2 svg,
     #divfilha3 svg {
-    margin-top: 20px;
-    margin-bottom: 7px;
-    margin-left: 22px;
-}
+        margin-top: 20px;
+        margin-bottom: 7px;
+        margin-left: 22px;
+    }
 }
 
 /*===================*/

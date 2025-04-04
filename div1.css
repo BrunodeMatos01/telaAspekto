@@ -78,6 +78,7 @@
 }
 
 @media (max-width: 460px) {
+
     #novo,
     #resultados {
         font-size: 32px;

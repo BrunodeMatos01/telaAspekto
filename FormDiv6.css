@@ -15,9 +15,10 @@
         width: 90%;
         max-width: 460px;
         margin-right: 0;
-        
+
     }
 }
+
 @media (max-width: 375px) {
     #Formdiv6 {
         width: 90%;
@@ -67,20 +68,21 @@
     margin-left: 7px;
 }
 
-@media (max-width: 460px)  {
+@media (max-width: 460px) {
     .input-rowS {
         display: flex;
         justify-content: space-between;
         gap: 1rem;
         margin-right: 10px;
     }
+
     .input-groupS {
         flex: 1;
         display: flex;
         flex-direction: column;
         margin-left: 10px;
     }
-    
+
     .input-groupS:last-child {
         margin-left: 10px;
     }
@@ -151,6 +153,7 @@ textarea {
         margin-top: 15px;
     }
 }
+
 @media (max-width: 375px) {
     #nomeL {
         margin-top: 15px;
