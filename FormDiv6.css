@@ -154,10 +154,5 @@ textarea {
     }
 }
 
-@media (max-width: 375px) {
-    #nomeL {
-        margin-top: 15px;
-    }
-}
 
 /*===================*/

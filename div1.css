@@ -24,7 +24,24 @@
         box-sizing: border-box;
         width: 100%;
         max-width: 460px;
-        height: 60%;
+        height: auto;
+        background: url(img/Rectangle\ \(2\).png) lightgray 0px 0px / 100% 100% no-repeat;
+        color: white;
+        padding: 20px;
+        position: relative;
+        flex-shrink: 0;
+    }
+}
+@media (max-width: 768px) {
+    #div1 {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-evenly;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 768px;
+        height: auto;
         background: url(img/Rectangle\ \(2\).png) lightgray 0px 0px / 100% 100% no-repeat;
         color: white;
         padding: 20px;
@@ -50,10 +67,19 @@
         max-width: 100%;
         text-align: start;
         margin-bottom: 20px;
-        margin-top: 4rem;
+        margin-top: 112px;
     }
 }
 
+@media (max-width: 768px) {
+    #divNovoAspecto {
+        margin-left: 1rem;
+        max-width: 100%;
+        text-align: start;
+        margin-bottom: 20px;
+        margin-top: 120px;
+    }
+}
 .graphic-container {
     margin-right: 0px;
     padding: 0px;
@@ -63,6 +89,11 @@
 @media (max-width: 460px) {
     .graphic-container {
         display: none;
+    }
+}
+@media (max-width: 768px) {
+    .graphic-container {
+        margin-top: 100px;
     }
 }
 
@@ -86,6 +117,15 @@
         line-height: 30.368px;
     }
 }
+@media (max-width: 768px) {
+
+    #novo,
+    #resultados {
+        font-size: 37px;
+        text-align: start;
+        line-height: 30.368px;
+    }
+}
 
 #aspecto,
 #novos {
@@ -99,12 +139,11 @@
 }
 
 @media (max-width: 768px) {
-
     #aspecto,
     #novos {
-        font-size: 32px;
+        font-size: 37px;
         text-align: start;
-        line-height: 30.368px;
+        line-height: 38.368px;
     }
 }
 

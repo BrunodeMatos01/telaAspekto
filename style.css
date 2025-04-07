@@ -29,7 +29,7 @@
         /*===================*/
 
         /*========Nav========*/
-        @media (min-width: 1460px) {
+        @media (min-width: 461px) {
             #navMv {
                 display: none;
             }
