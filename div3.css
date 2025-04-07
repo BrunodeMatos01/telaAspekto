@@ -11,6 +11,14 @@
     align-items: center;
 }
 
+@media (max-width: 820px) {
+    #div3 {
+        width: 100%;
+        max-width: 820px;
+        height: 700px;
+    }
+}
+
 @media (max-width: 460px) {
     #div3 {
         width: 100%;
@@ -30,12 +38,21 @@
     flex-wrap: nowrap;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
+    #Textdiv3 {
+        width: 90%;
+        text-align: center;
+        height: auto;
+    }
+}
+
+@media (max-width: 460px) {
     #Textdiv3 {
         width: 90%;
         text-align: center;
     }
 }
+
 
 #TextEstrategiadiv3 {
     color: #FFF;
@@ -88,13 +105,23 @@
     margin: 90px;
 }
 
+@media (max-width: 820px) {
+    #divMae {
+        flex-direction: column;
+        width: 100%;
+        max-width: 768px;
+        margin: 0px
+            
+    }
+}
+
 @media (max-width: 460px) {
     #divMae {
         flex-direction: column;
         width: 100%;
         max-width: 460px;
         margin: 0px
-            /* Ajusta a largura para 100% */
+            
     }
 }
 
@@ -113,8 +140,18 @@
     flex-wrap: wrap;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 820px) {
+    #divfilha1,
+    #divfilha2,
+    #divfilha3 {
+        width: 60%;
+        max-width: 768px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
 
+@media (max-width: 460px) {
     #divfilha1,
     #divfilha2,
     #divfilha3 {
@@ -138,7 +175,7 @@
     margin-left: 22px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
 
     #divfilha1 svg,
     #divfilha2 svg,
@@ -167,17 +204,14 @@
     margin-left: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
 
     #Text1Filha1,
     #Text1Filha2,
     #Text1Filha3 {
         font-size: 18px;
-        /* Reduz o tamanho da fonte em telas pequenas */
         text-align: center;
-        /* Centraliza o texto */
         margin-top: 20px;
-        /* Ajusta a margem superior */
     }
 }
 

@@ -33,6 +33,13 @@
     margin-top: 0px;
 }
 
+@media (max-width: 768px) {
+    #DivGeral6 {
+        width: 100%;
+        max-width: 768px;
+    }
+}
+
 @media (max-width: 460px) {
     #DivGeral6 {
         flex-direction: column;
@@ -52,6 +59,19 @@
     align-items: start;
     justify-content: space-between;
     margin-left: 200px;
+}
+
+@media (max-width: 768px) {
+    #TextGeradiv6 {
+        width: 100%;
+        max-width: 768px;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        margin-left: 30px;
+    }
 }
 
 @media (max-width: 460px) {
@@ -93,6 +113,14 @@
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    #Text2div6 {
+        width: 100%;
+        max-width: 768px;
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 460px) {
@@ -175,7 +203,7 @@
     border: solid 0px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 460px) {
     #btn6 {
         display: none;
     }
@@ -221,6 +249,16 @@
     margin-top: 50px;
 }
 
+@media (max-width: 768px) {
+    #Linha {
+        width: 60%;
+        height: 0.8px;
+        max-width: 768px;
+        margin-top: 5.5rem;
+    }
+}
+
+
 @media (max-width: 460px) {
     #Linha {
         width: 60%;
@@ -253,6 +291,18 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    #footer {
+        width: 100%;
+        max-width: 720px;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
 @media (max-width: 460px) {
