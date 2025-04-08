@@ -26,6 +26,7 @@
         height: auto;
     }
 }
+
 @media (max-width: 375px) {
     #div3 {
         width: 100%;
@@ -59,6 +60,7 @@
         text-align: center;
     }
 }
+
 @media (max-width: 375px) {
     #Textdiv3 {
         width: 100%;
@@ -107,6 +109,7 @@
         font-size: 18px;
     }
 }
+
 @media (max-width: 460px) {
     #TextMarcadiv3 {
         font-size: 16px;
@@ -131,7 +134,6 @@
         width: 100%;
         max-width: 768px;
         margin: 0px
-            
     }
 }
 
@@ -141,7 +143,6 @@
         width: 100%;
         max-width: 460px;
         margin: 0px
-            
     }
 }
 
@@ -151,7 +152,6 @@
         width: 100%;
         max-width: 320px;
         margin: 0px
-            
     }
 }
 
@@ -171,6 +171,7 @@
 }
 
 @media (max-width: 1024px) {
+
     #divfilha1,
     #divfilha2,
     #divfilha3 {
@@ -182,6 +183,7 @@
 }
 
 @media (max-width: 460px) {
+
     #divfilha1,
     #divfilha2,
     #divfilha3 {
@@ -193,6 +195,7 @@
 }
 
 @media (max-width: 375px) {
+
     #divfilha1,
     #divfilha2,
     #divfilha3 {
@@ -255,6 +258,7 @@
         margin-top: 20px;
     }
 }
+
 @media (max-width: 375px) {
 
     #Text1Filha1,
@@ -285,6 +289,7 @@
 }
 
 @media (max-width: 1024px) {
+
     #Text2Filha3,
     #Text2Filha1,
     #Text2Filha2,
@@ -295,7 +300,9 @@
         text-align: start;
     }
 }
+
 @media (max-width: 375px) {
+
     #Text2Filha3,
     #Text2Filha1,
     #Text2Filha2,

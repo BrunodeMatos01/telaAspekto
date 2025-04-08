@@ -426,6 +426,7 @@
         margin: 0;
     }
 }
+
 @media (max-width: 375px) {
     #Termos {
         font-size: 7px;
@@ -456,6 +457,7 @@
         margin-right: 5px;
     }
 }
+
 @media (max-width: 375px) {
     #Icones {
         display: flex;
@@ -487,6 +489,7 @@
         height: 16px;
     }
 }
+
 @media (max-width: 375px) {
 
     #Be svg,

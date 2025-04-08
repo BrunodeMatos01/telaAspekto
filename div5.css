@@ -19,6 +19,7 @@
         height: 510px;
     }
 }
+
 @media (max-width: 375px) {
     #div5 {
         width: 100%;
@@ -154,7 +155,7 @@
 @media (max-width: 460px) {
     #Silvia {
         font-size: 9px;
-        
+
     }
 }
 
@@ -212,6 +213,7 @@
         margin-bottom: 50px;
     }
 }
+
 @media (max-width: 375px) {
     .slide {
         min-width: 100%;
@@ -224,7 +226,7 @@
         align-items: center;
         padding: 1rem;
         height: 140px;
-        margin-bottom:80px;
+        margin-bottom: 80px;
     }
 }
 
