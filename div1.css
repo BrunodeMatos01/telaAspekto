@@ -14,7 +14,8 @@
     margin: 0px;
     flex-shrink: 0;
 }
-@media (max-width: 820px) {
+
+@media (max-width: 1024px) {
     #div1 {
         display: flex;
         align-items: center;
@@ -22,7 +23,7 @@
         justify-content: space-evenly;
         box-sizing: border-box;
         width: 100%;
-        max-width: 820px;
+        max-width: 1024px;
         height: auto;
         background: url(img/Rectangle\ \(2\).png) lightgray 0px 0px / 100% 100% no-repeat;
         color: white;
@@ -61,13 +62,14 @@
     margin-right: 0px;
     padding: 0px;
 }
-@media (max-width: 820px) {
+
+@media (max-width: 1024px) {
     #divNovoAspecto {
         margin-left: 1rem;
         max-width: 100%;
         text-align: start;
         margin-bottom: 20px;
-        margin-top: 120px;
+        margin-top: 100px;
     }
 }
 
@@ -87,7 +89,7 @@
     display: block;
 }
 
-@media (max-width: 820px) {
+@media (max-width: 1024px) {
     .graphic-container {
         margin-top: 100px;
     }
@@ -111,7 +113,7 @@
     line-height: 63.368px;
 }
 
-@media (max-width: 820px) {
+@media (max-width: 1024px) {
 
     #novo,
     #resultados {
@@ -126,6 +128,16 @@
     #novo,
     #resultados {
         font-size: 32px;
+        text-align: start;
+        line-height: 30.368px;
+    }
+}
+
+@media (max-width: 375px) {
+
+    #novo,
+    #resultados {
+        font-size: 29px;
         text-align: start;
         line-height: 30.368px;
     }
@@ -142,7 +154,8 @@
     line-height: 63.368px;
 }
 
-@media (max-width: 820px) {
+@media (max-width: 1024px) {
+
     #aspecto,
     #novos {
         font-size: 37px;
@@ -152,9 +165,20 @@
 }
 
 @media (max-width: 460px) {
+
     #aspecto,
     #novos {
         font-size: 32px;
+        text-align: start;
+        line-height: 30.368px;
+    }
+}
+
+@media (max-width: 375px) {
+
+    #aspecto,
+    #novos {
+        font-size: 29px;
         text-align: start;
         line-height: 30.368px;
     }
@@ -165,7 +189,7 @@ p {
     margin-top: 16px;
     margin-bottom: 38px;
     padding: 0px;
-    color: #FFF;
+    color: #ffffff;
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
     font-weight: 450;
@@ -177,7 +201,14 @@ p {
         margin-bottom: 20px;
         font-size: 15px;
         text-align: start;
-        /* Reduz o tamanho da fonte em telas pequenas */
+    }
+}
+
+@media (max-width: 375px) {
+    p {
+        margin-bottom: 20px;
+        font-size: 13px;
+        text-align: start;
     }
 }
 
@@ -205,6 +236,13 @@ p {
     #btn2 {
         padding: 0.3em 0.1em;
         width: 70%;
+    }
+}
+
+@media (max-width: 375px) {
+    #btn2 {
+        padding: 0.3em 0.1em;
+        width: 90%;
     }
 }
 

@@ -19,6 +19,13 @@
         height: 510px;
     }
 }
+@media (max-width: 375px) {
+    #div5 {
+        width: 100%;
+        max-width: 375px;
+        height: 540px;
+    }
+}
 
 /*===================*/
 
@@ -144,10 +151,10 @@
     vertical-align: middle;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 460px) {
     #Silvia {
         font-size: 9px;
-        /* Reduz o tamanho da fonte em telas pequenas */
+        
     }
 }
 
@@ -203,6 +210,21 @@
         padding: 1rem;
         height: 140px;
         margin-bottom: 50px;
+    }
+}
+@media (max-width: 375px) {
+    .slide {
+        min-width: 100%;
+        box-sizing: border-box;
+        background: #F2F2F2;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 1rem;
+        height: 140px;
+        margin-bottom:80px;
     }
 }
 

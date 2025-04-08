@@ -33,10 +33,10 @@
     margin-top: 0px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     #DivGeral6 {
         width: 100%;
-        max-width: 768px;
+        max-width: 1024px;
     }
 }
 
@@ -61,10 +61,10 @@
     margin-left: 200px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     #TextGeradiv6 {
         width: 100%;
-        max-width: 768px;
+        max-width: 1024px;
         height: 280px;
         display: flex;
         flex-direction: column;
@@ -115,10 +115,10 @@
     flex-shrink: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     #Text2div6 {
         width: 100%;
-        max-width: 768px;
+        max-width: 1024px;
         margin-top: 20px;
     }
 }
@@ -159,6 +159,12 @@
     font-style: normal;
     font-weight: 450;
     line-height: 18px;
+}
+
+@media (max-width: 1024px) {
+    #suaEmpresa {
+        width: 90%;
+    }
 }
 
 @media (max-width: 460px) {
@@ -203,6 +209,13 @@
     border: solid 0px;
 }
 
+@media (max-width: 1024px) {
+    #btn6 {
+        width: 50%;
+        padding: 0.1em 0.1em;
+    }
+}
+
 @media (max-width: 460px) {
     #btn6 {
         display: none;
@@ -232,7 +245,7 @@
     padding: 0.4rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     #vamos6 {
         font-size: 12px;
     }
@@ -249,11 +262,11 @@
     margin-top: 50px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     #Linha {
         width: 60%;
         height: 0.8px;
-        max-width: 768px;
+        max-width: 1024px;
         margin-top: 5.5rem;
     }
 }
@@ -293,7 +306,7 @@
     justify-content: space-between;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     #footer {
         width: 100%;
         max-width: 720px;
@@ -380,6 +393,21 @@
     }
 }
 
+@media (max-width: 375px) {
+    #Aspekto svg {
+        width: 80px;
+        height: 22px;
+        flex-shrink: 0;
+        margin: 0;
+        padding: 0;
+        margin-left: 10px;
+    }
+
+    #Aspekto {
+        margin-left: 0;
+    }
+}
+
 #Termos {
     color: #FFF;
     font-family: "Montserrat", sans-serif;
@@ -393,6 +421,14 @@
 @media (max-width: 460px) {
     #Termos {
         font-size: 10px;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+}
+@media (max-width: 375px) {
+    #Termos {
+        font-size: 7px;
         text-align: center;
         padding: 0;
         margin: 0;
@@ -420,6 +456,18 @@
         margin-right: 5px;
     }
 }
+@media (max-width: 375px) {
+    #Icones {
+        display: flex;
+        width: 110px;
+        height: 35px;
+        padding: 5px;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 15px;
+        margin-right: 0px;
+    }
+}
 
 #Be svg,
 #Insta svg,
@@ -437,5 +485,15 @@
     #Watts svg {
         width: 16px;
         height: 16px;
+    }
+}
+@media (max-width: 375px) {
+
+    #Be svg,
+    #Insta svg,
+    #LinkeDin svg,
+    #Watts svg {
+        width: 15px;
+        height: 15px;
     }
 }

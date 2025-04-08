@@ -14,7 +14,7 @@
     overflow: hidden;
 }
 
-@media (max-width: 820px) {
+@media (max-width: 1024px) {
     #div2 {
         position: relative;
         padding: 0;
@@ -57,7 +57,7 @@
         margin: 0;
         height: auto;
         width: 100%;
-        max-width: 460px;
+        max-width: 375px;
         background-color: white;
         flex-shrink: 0;
         display: flex;
@@ -65,6 +65,7 @@
         flex-direction: row-reverse;
         justify-content: space-between;
         overflow: hidden;
+        padding-left: 30px;
     }
 }
 
@@ -107,7 +108,8 @@
     background: url(img/Rectangle\ 5\ \(1\).png) lightgray 50% / cover no-repeat;
     z-index: 1;
 }
-@media (max-width: 820px) {
+
+@media (max-width: 1024px) {
     #Desenhoverde {
         margin-left: 130px;
     }
@@ -125,6 +127,7 @@
         display: none;
     }
 }
+
 /*===================*/
 
 /*========Text div2========*/
@@ -158,15 +161,22 @@
         gap: 10px;
     }
 }
+@media (max-width: 375px) {
+    #Geraldiv2 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
 
 #divDotext {
     width: 450px;
     height: 550px;
 }
 
-@media (max-width: 820px) {
+@media (max-width: 1024px) {
     #divDotext {
-        width: 500;
+        width: 500px;
         height: auto;
     }
 }
@@ -188,17 +198,26 @@
     text-align: left;
 }
 
-@media (max-width: 820px) {
+@media (max-width: 1024px) {
     #textdiv1 {
-        margin-top: 35px;
-        font-size: 30px;
+        font-size: 45px;
         text-align: start;
+    }
+
+    #textdiv2 {
+        color: #140024;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 23px;
+        margin-bottom: 15px;
     }
 }
 
-@media (max-width: 375px) {
+
+@media (max-width: 460px) {
     #textdiv1 {
-        margin-top: 50px;
+        margin-top: 30px;
         font-size: 30px;
         text-align: start;
     }
@@ -210,6 +229,14 @@
     font-weight: 800;
     color: #150024;
 }
+
+@media (max-width: 1024px) {
+    #marketing {
+        font-size: 47px;
+        text-align: start;
+    }
+}
+
 
 @media (max-width: 460px) {
     #marketing {
@@ -248,6 +275,11 @@
     #textdiv2Mv {
         font-size: 20px;
         margin-bottom: 18px;
+    }
+}
+@media (max-width: 375px) {
+    #textdiv2Mv {
+        width: 92%;
     }
 }
 
@@ -310,6 +342,36 @@
     margin-right: 10px;
 }
 
+@media (max-width: 1024px) {
+
+    #textFilha1div2,
+    #textFilha2div2,
+    #textFilha3div2 {
+        width: 350px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    #textFilha1div2 svg,
+    #textFilha2div2 svg,
+    #textFilha3div2 svg {
+        width: 55px;
+    }
+
+    .textfilha1div2span {
+        width: 400px;
+    }
+
+    #textFilha1div2 span,
+    #textFilha2div2 span,
+    #textFilha3div2 span {
+        font-size: 19px;
+    }
+
+}
+
+
 @media (max-width: 460px) {
 
     #textFilha1div2,
@@ -328,10 +390,18 @@
     }
 
     .textfilha1div2span {
-        width: 300px;
+        width: 400px;
+    }
+
+    #textFilha1div2 span,
+    #textFilha2div2 span,
+    #textFilha3div2 span {
+        font-size: 15px;
     }
 
 }
+
+
 
 
 #textFilha1div2 span,
@@ -361,6 +431,13 @@
     line-height: 23px;
 }
 
+@media (max-width: 1024px) {
+    #Aaspekto {
+        line-height: 10px;
+        font-size: 23px;
+    }
+}
+
 @media (max-width: 460px) {
     #Aaspekto {
         line-height: 10px;
@@ -373,16 +450,24 @@
     width: 130px;
 }
 
-@media (max-width: 820px) {
+@media (max-width: 1024px) {
     #imaginaria {
         width: 100px;
     }
 }
+
 @media (max-width: 460px) {
     #imaginaria {
         width: 50px;
     }
 }
+
+@media (max-width: 375px) {
+    #imaginaria {
+        width: 30px;
+    }
+}
+
 
 
 /*========Btnd5iv2========*/
@@ -404,12 +489,12 @@
     border: solid 0px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     #btn5 {
         width: 360px;
         height: 40px;
         margin-bottom: 0px;
-        margin-top: 100px;
+        margin-top: 20px;
         margin-left: 8px;
     }
 }
@@ -419,8 +504,17 @@
         width: 280px;
         height: 40px;
         margin-bottom: 0px;
-        margin-top: 10%;
+        margin-top: 1em;
         margin-left: 8px;
+    }
+}
+@media (max-width: 375px) {
+    #btn5 {
+        width: 280px;
+        height: 40px;
+        margin-bottom: 0px;
+        margin-top: 70px;
+        margin-left: 0;
     }
 }
 

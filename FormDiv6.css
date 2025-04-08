@@ -10,10 +10,10 @@
     transition: border-color 0.3s ease;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     #Formdiv6 {
         width: 90%;
-        max-width: 768px;
+        max-width: 1024px;
         margin-right: 20px;
 
     }
