@@ -12,10 +12,10 @@
     flex-shrink: 0;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 568px) {
     #div6 {
         width: 100%;
-        max-width: 460px;
+        max-width: 568px;
         height: 775px;
     }
 }
@@ -40,7 +40,7 @@
     }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 568px) {
     #DivGeral6 {
         flex-direction: column;
         width: 80%;
@@ -61,6 +61,19 @@
     margin-left: 200px;
 }
 
+@media (max-width: 1400px) {
+    #TextGeradiv6 {
+        width: 30%;
+        max-width: 1024px;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        margin-left: 90px;
+    }
+}
+
 @media (max-width: 1024px) {
     #TextGeradiv6 {
         width: 100%;
@@ -74,7 +87,7 @@
     }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 568px) {
     #TextGeradiv6 {
         width: 100%;
         max-width: 460px;
@@ -99,7 +112,7 @@
     flex-shrink: 0;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 568px) {
     #Text1div6 {
         width: 100%;
         max-width: 460px;
@@ -115,6 +128,14 @@
     flex-shrink: 0;
 }
 
+@media (max-width: 1400px) {
+    #Text2div6 {
+        width: 100%;
+        max-width: 1024px;
+        margin-top: 30px;
+    }
+}
+
 @media (max-width: 1024px) {
     #Text2div6 {
         width: 100%;
@@ -123,10 +144,11 @@
     }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 568px) {
     #Text2div6 {
         width: 100%;
         max-width: 460px;
+        margin-top: 10px;
     }
 }
 
@@ -143,15 +165,14 @@
     letter-spacing: 0.745px;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 568px) {
     #Qual {
         font-size: 24px;
         text-align: start;
+        padding-bottom: 10px;
         margin: 0;
-        padding: 0;
     }
 }
-
 #suaEmpresa {
     color: #FFF;
     font-family: "Montserrat", sans-serif;
@@ -167,7 +188,7 @@
     }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 568px) {
     #suaEmpresa {
         font-size: 14px;
         text-align: start;
@@ -176,7 +197,7 @@
     }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 568px) {
     #suaEmpresa {
         font-size: 14px;
         text-align: start;
@@ -184,14 +205,7 @@
     }
 }
 
-@media (max-width: 460px) {
-    #Qual {
-        font-size: 24px;
-        text-align: start;
-        padding-bottom: 25px;
-        margin: 0;
-    }
-}
+
 
 /*===================*/
 
@@ -208,6 +222,13 @@
     padding: 0.3em 1em;
     border: solid 0px;
 }
+@media (max-width: 1400px) {
+    #btn6 {
+        width: 90%;
+        padding: 0.1em 0.1em;
+        margin-top: 20px;
+    }
+}
 
 @media (max-width: 1024px) {
     #btn6 {
@@ -216,7 +237,7 @@
     }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 568px) {
     #btn6 {
         display: none;
     }
@@ -272,7 +293,7 @@
 }
 
 
-@media (max-width: 460px) {
+@media (max-width: 568px) {
     #Linha {
         width: 60%;
         height: 0.8px;
@@ -306,6 +327,8 @@
     justify-content: space-between;
 }
 
+
+
 @media (max-width: 1024px) {
     #footer {
         width: 100%;
@@ -318,7 +341,7 @@
     }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 568px) {
     #footer {
         width: 100%;
         max-width: 460px;
@@ -342,7 +365,7 @@
     }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 568px) {
     #footerGeral {
         width: 100%;
         max-width: 460px;
@@ -362,7 +385,7 @@
     flex-shrink: 0;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 568px) {
     #Text3div6 {
         width: 40%;
         max-width: 460px;
@@ -378,7 +401,7 @@
     flex-shrink: 0;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 568px) {
     #Aspekto svg {
         width: 80px;
         height: 22px;
@@ -418,7 +441,7 @@
     letter-spacing: 0.667px;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 568px) {
     #Termos {
         font-size: 10px;
         text-align: center;
@@ -445,7 +468,7 @@
     justify-content: space-between;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 568px) {
     #Icones {
         display: flex;
         width: 110px;
@@ -479,7 +502,7 @@
     height: 19px;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 568px) {
 
     #Be svg,
     #Insta svg,

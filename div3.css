@@ -11,18 +11,18 @@
     align-items: center;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1110px) {
     #div3 {
         width: 100%;
-        max-width: 1024px;
+        max-width: 1110px;
         height: auto;
     }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 568px) {
     #div3 {
         width: 100%;
-        max-width: 460px;
+        max-width: 568px;
         height: auto;
     }
 }
@@ -46,7 +46,7 @@
     flex-wrap: nowrap;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1110px) {
     #Textdiv3 {
         width: 90%;
         text-align: center;
@@ -54,7 +54,7 @@
     }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 568px) {
     #Textdiv3 {
         width: 90%;
         text-align: center;
@@ -80,7 +80,7 @@
     line-height: 47px;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 568px) {
     #TextEstrategiadiv3 {
         font-size: 18px;
         line-height: 30px;
@@ -104,13 +104,13 @@
     line-height: 47px;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 568px) {
     #TextMarcadiv3 {
         font-size: 18px;
     }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 568px) {
     #TextMarcadiv3 {
         font-size: 16px;
     }
@@ -128,7 +128,8 @@
     margin: 90px;
 }
 
-@media (max-width: 1024px) {
+
+@media (max-width: 1110px) {
     #divMae {
         flex-direction: column;
         width: 100%;
@@ -137,7 +138,7 @@
     }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 568px) {
     #divMae {
         flex-direction: column;
         width: 100%;
@@ -170,7 +171,7 @@
     flex-wrap: wrap;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1110px) {
 
     #divfilha1,
     #divfilha2,
@@ -182,7 +183,7 @@
     }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 568px) {
 
     #divfilha1,
     #divfilha2,
@@ -219,7 +220,7 @@
     margin-left: 22px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1110px) {
 
     #divfilha1 svg,
     #divfilha2 svg,
@@ -248,7 +249,7 @@
     margin-left: 10px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1110px) {
 
     #Text1Filha1,
     #Text1Filha2,
@@ -288,7 +289,7 @@
 
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1110px) {
 
     #Text2Filha3,
     #Text2Filha1,
@@ -315,15 +316,7 @@
 }
 
 
-@media (min-width: 460px) {
-    #Text2Filha3Mv {
-        display: none;
-        margin-left: 45px;
-    }
-}
-
-
-@media (max-width: 460px) {
+@media (max-width: 568px) {
     #Text2Filha3 {
         display: none;
     }
@@ -364,7 +357,7 @@
     }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 568px) {
     #btndiv3 {
         padding: 0.3em 0.1em;
         width: 100%;
@@ -381,7 +374,7 @@
     padding: 0.4rem;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 568px) {
     #vamos2 {
         margin-right: 1rem;
         padding: 0.4rem;
@@ -397,7 +390,7 @@
     padding: 6px;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 568px) {
     #btndiv3 svg {
         width: 1.0rem;
         height: 1.0rem;

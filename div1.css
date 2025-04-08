@@ -95,7 +95,7 @@
     }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 704px) {
     .graphic-container {
         display: none;
     }
