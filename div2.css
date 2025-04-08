@@ -565,11 +565,9 @@
     #btn5 {
         width: 360px;
         height: 40px;
-        margin-top: 40px;
+        margin-top: 4rem;
     }
 }
-
-
 
 @media (max-width: 1024px) {
     #btn5 {
