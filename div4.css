@@ -36,10 +36,10 @@
 /*========Imagem div4========*/
 #ImagemDiv4 {
     width: 241px;
-    height: 390px;
+    height: 400px;
     flex-shrink: 0;
     border-radius: 17px;
-    background: url(img/image\ \(4\).png) lightgray -208.361px 0px / 271.383% 100% no-repeat;
+    background: url(img/inbound-marketing.png) lightgray -150.361px 0px / 271.383% 100% no-repeat;
     margin-top: 55px;
 }
 

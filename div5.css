@@ -2,7 +2,7 @@
 #div5 {
     padding: 0px;
     margin: 0px;
-    height: 704px;
+    height: auto;
     width: 100%;
     background: #F2F2F2;
     flex-shrink: 0;
@@ -16,7 +16,7 @@
     #div5 {
         width: 100%;
         max-width: 460px;
-        height: 510px;
+        height: auto;
     }
 }
 
@@ -24,7 +24,7 @@
     #div5 {
         width: 100%;
         max-width: 375px;
-        height: 540px;
+        height:  auto;
     }
 }
 
@@ -296,42 +296,45 @@
 
 /*===================*/
 
-/*========Borda Imagem========*/
-#Borda {
-    width: 706px;
-    height: 215px;
-    flex-shrink: 0;
-    border-radius: 4px;
-    border: 2px solid #150024;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-}
+/*========Imagem div5========*/
 
-@media (max-width: 460px) {
-    #Borda {
-        max-width: 80%;
-        height: auto;
-        padding: 10px;
+@media (min-width: 800px) {
+        #Imagemdiv5Mv {
+            display: none;
+        }
+        #Imagemdiv5 {
+            display: block;
+        }
+}
+@media (max-width: 800px) {
+    #Imagemdiv5Mv {
+        display: block;
+    }
+    #Imagemdiv5 {
+        display: none;
     }
 }
 
-/*===================*/
-
-/*========Imagem div5========*/
-#Imagendiv5 {
+#Imagemdiv5 img {
+    width: 70%;
     max-width: 100%;
     height: auto;
     box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
-@media (max-width:460px) {
-    #Imagendiv5 {
-        width: 100%;
-        height: auto;
-
-    }
+#Imagemdiv5Mv img {
+    width: 50%; 
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
 }
+
+
 
 /*===================*/
