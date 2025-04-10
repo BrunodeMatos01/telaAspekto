@@ -32,10 +32,25 @@
 
 /*========Divs Text div5========*/
 #Text1div5 {
-    width: 549px;
+    width: 90%;
     height: 111px;
     margin-bottom: 2em;
     margin-top: 100px;
+}
+
+@media (max-width: 1440px) {
+    #Text1div5 {
+        width: 50%;
+        max-width: 1440px;
+        margin-top: 70px;
+    }
+}
+@media (max-width: 1024px) {
+    #Text1div5 {
+        width: 75%;
+        max-width: 1024px;
+        margin-top: 70px;
+    }
 }
 
 @media (max-width: 460px) {
