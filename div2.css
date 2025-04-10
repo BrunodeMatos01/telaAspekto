@@ -380,7 +380,7 @@
     height: 22vh;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
 
     #text4div2 {
         width: 90%;
