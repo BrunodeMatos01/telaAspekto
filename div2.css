@@ -52,23 +52,38 @@
 
 @media (max-width: 460px) {
     #div2 {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-left: 0;
-        padding-right: 0;
+        position: relative;
+        padding: 0;
+        margin: 0;
         height: auto;
+        width: 100%;
+        max-width: 460px;
+        background-color: white;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        overflow: hidden;
     }
 }
 
 @media (max-width: 375px) {
     #div2 {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        position: relative;
+        padding: 0;
+        margin: 0;
         height: auto;
-        padding-left: 0;
-        padding-right: 0;
+        width: 100%;
+        max-width: 375px;
+        background-color: white;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        overflow: hidden;
+        padding-left: 30px;
     }
 }
 
@@ -182,11 +197,12 @@
 
 @media (max-width: 460px) {
     #textContainer {
-        width: 100%;
-        padding: 0 1rem;
-        margin: 0 auto;
+        width: 100vw;
+        margin: auto;
+        text-align: left;
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 30px;
     }
-
 }
 
 #Geraldiv2 {
@@ -380,20 +396,6 @@
     height: 22vh;
 }
 
-@media (max-width: 400px) {
-
-    #text4div2 {
-        width: 90%;
-        max-width: 500px;
-        min-height: auto;
-        padding: 0rem;
-        box-sizing: border-box;
-    }
-}
-
-
-
-
 #textFilha1div2,
 #textFilha2div2,
 #textFilha3div2 {
@@ -484,37 +486,10 @@
     #textFilha1div2,
     #textFilha2div2,
     #textFilha3div2 {
-        width: 90%;
-        justify-content: flex-start;
-        gap: 0.5rem;
-    }
-
-    #textFilha1div2 svg,
-    #textFilha2div2 svg,
-    #textFilha3div2 svg {
-        width: 42px;
-    }
-
-    .textfilha1div2span {
-        width: 400px;
-    }
-
-    #textFilha1div2 span,
-    #textFilha2div2 span,
-    #textFilha3div2 span {
-        font-size: 15px;
-    }
-
-}
-
-@media (max-width: 375px) {
-
-    #textFilha1div2,
-    #textFilha2div2,
-    #textFilha3div2 {
-        width: 90%;
-        justify-content: flex-start;
-        gap: 0.5rem;
+        width: 300px;
+        height: 100%;
+        display: flex;
+        align-items: center;
     }
 
     #textFilha1div2 svg,
@@ -665,7 +640,7 @@
         width: 280px;
         height: 40px;
         margin-bottom: 0px;
-        margin-top: 5px;
+        margin-top: 1em;
         margin-left: 8px;
         padding: 0.3em 1em;
     }
@@ -676,7 +651,7 @@
         width: 280px;
         height: 40px;
         margin-bottom: 0px;
-        margin-top: 5px;
+        margin-top: 40px;
         margin-left: 0;
         padding: 0.3em 1em;
     }
@@ -716,5 +691,3 @@
         padding: 0.5rem;
     }
 }
-
-/*===================*/
