@@ -32,6 +32,24 @@
     }
 }
 
+@media (max-width: 734px) {
+    #div2 {
+        position: relative;
+        padding: 0;
+        margin: 0;
+        height: 700px;
+        width: 100%;
+        max-width: 734px;
+        background-color: white;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+}
+
 @media (max-width: 460px) {
     #div2 {
         position: relative;
@@ -149,9 +167,10 @@
         width: 100vw;
         margin-right: 11%;
         margin-left: 0;
-        height: 95%;
+        height: 100%;
         text-align: left;
         font-family: 'Montserrat', sans-serif;
+        margin-top: 10px;
     }
 }
 
@@ -161,6 +180,7 @@
         margin: 0 13%;
         text-align: left;
         font-family: 'Montserrat', sans-serif;
+        margin-top: 60px;
     }
 }
 
@@ -171,6 +191,7 @@
         margin: 0 auto;
         text-align: left;
         font-family: 'Montserrat', sans-serif;
+        margin-top: 0px;
     }
 }
 
@@ -180,6 +201,7 @@
         margin: auto;
         text-align: left;
         font-family: 'Montserrat', sans-serif;
+        margin-top: 30px;
     }
 }
 
@@ -217,6 +239,14 @@
     }
 }
 
+@media (max-width: 734px) {
+    #divDotext {
+        width: 330px;
+        height: 550px;
+        margin: 0 auto;
+    }
+}
+
 @media (max-width: 460px) {
     #divDotext {
         width: 330px;
@@ -250,6 +280,13 @@
     }
 }
 
+@media (max-width: 743px) {
+    #textdiv1 {
+        margin-top: 60px;
+        font-size: 30px;
+        text-align: start;
+    }
+}
 
 @media (max-width: 460px) {
     #textdiv1 {
@@ -303,7 +340,7 @@
     }
 }
 
-@media (min-width: 460px) {
+@media (min-width: 461px) {
     #textdiv2Mv {
         display: none;
     }
@@ -528,17 +565,13 @@
     }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 734px) {
     #imaginaria {
-        width: 50px;
+        display: none;
     }
 }
 
-@media (max-width: 375px) {
-    #imaginaria {
-        width: 30px;
-    }
-}
+
 
 
 
@@ -561,11 +594,22 @@
     border: solid 0px;
 }
 
+@media (max-width: 3000px) {
+    #btn5 {
+        width: 360px;
+        height: 40px;
+        margin-top: 1px;
+        margin-bottom: 0rem;
+        padding: 0.3em 1em;
+    }
+}
+
 @media (max-width: 2100px) {
     #btn5 {
         width: 360px;
         height: 40px;
         margin-top: 5rem;
+        padding: 0.3em 1em;
     }
 }
 
@@ -576,6 +620,18 @@
         margin-bottom: 0px;
         margin-top: 40px;
         margin-left: 8px;
+        padding: 0.3em 1em;
+    }
+}
+
+@media (max-width: 734px) {
+    #btn5 {
+        width: 280px;
+        height: 40px;
+        margin-bottom: 0px;
+        margin-top: 4em;
+        margin-left: 8px;
+        padding: 0.3em 1em;
     }
 }
 
@@ -586,6 +642,7 @@
         margin-bottom: 0px;
         margin-top: 1em;
         margin-left: 8px;
+        padding: 0.3em 1em;
     }
 }
 
@@ -594,8 +651,9 @@
         width: 280px;
         height: 40px;
         margin-bottom: 0px;
-        margin-top: 70px;
+        margin-top: 40px;
         margin-left: 0;
+        padding: 0.3em 1em;
     }
 }
 
@@ -622,7 +680,7 @@
     padding: 0.5rem;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 734px) {
     #vamos5 {
         color: #ffffff;
         font-family: "Montserrat", sans-serif;

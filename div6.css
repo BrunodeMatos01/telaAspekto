@@ -16,7 +16,7 @@
     #div6 {
         width: 100%;
         max-width: 568px;
-        height: 775px;
+        height: 850px;
     }
 }
 
@@ -149,6 +149,7 @@
         width: 100%;
         max-width: 460px;
         margin-top: 10px;
+        margin-bottom: 20px;
     }
 }
 
@@ -225,7 +226,7 @@
 @media (max-width: 1400px) {
     #btn6 {
         width: 90%;
-        padding: 0.1em 0.1em;
+        padding: 0.3em 2em;
         margin-top: 20px;
     }
 }
@@ -233,7 +234,13 @@
 @media (max-width: 1024px) {
     #btn6 {
         width: 50%;
-        padding: 0.1em 0.1em;
+        padding: 0.3em 2em;
+    }
+}
+@media (max-width: 768px) {
+    #btn6 {
+        width: 50%;
+        padding: 0.3em 0.5em;
     }
 }
 
@@ -266,7 +273,13 @@
     padding: 0.4rem;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 3000px) {
+    #vamos6 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 2100px) {
     #vamos6 {
         font-size: 12px;
     }
@@ -285,7 +298,7 @@
 
 @media (max-width: 1024px) {
     #Linha {
-        width: 60%;
+        width: 50%;
         height: 0.8px;
         max-width: 1024px;
         margin-top: 5.5rem;
@@ -295,7 +308,7 @@
 
 @media (max-width: 568px) {
     #Linha {
-        width: 60%;
+        width: 50%;
         height: 0.8px;
         max-width: 460px;
         margin-top: 11.5rem;
@@ -304,7 +317,7 @@
 
 @media (max-width: 375px) {
     #Linha {
-        width: 60%;
+        width: 50%;
         height: 0.8px;
         max-width: 460px;
         margin-top: 9.5rem;
@@ -324,8 +337,9 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
+
 
 
 
@@ -337,7 +351,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 }
 
@@ -345,11 +359,19 @@
     #footer {
         width: 100%;
         max-width: 460px;
-        margin-top: 40px;
+        margin-top: 0px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
+        padding-bottom: 20px; 
+    }
+
+    #footerGeral {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1px; 
     }
 }
 
@@ -357,42 +379,24 @@
     #footer {
         width: 100%;
         max-width: 460px;
-        margin-top: 40px;
+        margin-top: 0px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
+        padding-bottom: 20px; 
     }
-}
 
-@media (max-width: 568px) {
     #footerGeral {
-        width: 100%;
-        max-width: 460px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1px; 
     }
 }
 
 /*===================*/
 
-/*========Div do "Termo"6========*/
-#Text3div6 {
-    display: flex;
-    width: 390.973px;
-    height: 13.333px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-}
-
-@media (max-width: 568px) {
-    #Text3div6 {
-        width: 40%;
-        max-width: 460px;
-    }
-}
-
-/*===================*/
 
 /*========Footer Text6========*/
 #Aspekto {
@@ -431,34 +435,6 @@
     }
 }
 
-#Termos {
-    color: #FFF;
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 26.4px;
-    letter-spacing: 0.667px;
-}
-
-@media (max-width: 568px) {
-    #Termos {
-        font-size: 10px;
-        text-align: center;
-        padding: 0;
-        margin: 0;
-    }
-}
-
-@media (max-width: 375px) {
-    #Termos {
-        font-size: 7px;
-        text-align: center;
-        padding: 0;
-        margin: 0;
-    }
-}
-
 #Icones {
     display: flex;
     width: 110px;
@@ -476,8 +452,8 @@
         padding: 10px;
         flex-direction: row;
         justify-content: space-between;
-        margin-top: 15px;
-        margin-right: 5px;
+        margin-left: 22px;
+        margin-bottom: 30px;
     }
 }
 
@@ -489,8 +465,8 @@
         padding: 5px;
         flex-direction: row;
         justify-content: space-between;
-        margin-top: 15px;
-        margin-right: 0px;
+        margin-left: 10px;
+        margin-bottom: 30px;
     }
 }
 

@@ -35,12 +35,16 @@
 
 /*========Imagem div4========*/
 #ImagemDiv4 {
-    width: 241px;
+    width: 230px;
     height: 400px;
     flex-shrink: 0;
     border-radius: 17px;
-    background: url(img/inbound-marketing.png) lightgray -150.361px 0px / 271.383% 100% no-repeat;
-    margin-top: 55px;
+    background: url(img/inbound-marketing.png) lightgray -140.361px 0px / 271.383% 100% no-repeat;
+    margin-top: 80px;
+}
+
+#ImagemDiv4 img{
+    width: 300px;
 }
 
 
@@ -67,7 +71,7 @@
     #TextGeraldiv4 {
         width: 80%;
         height: auto;
-        text-align: center;
+        text-align: start;
     }
 }
 
@@ -77,6 +81,7 @@
         width: 100%;
         max-width: 768px;
         height: auto;
+        margin-top: 4%;
         gap: 3em;
     }
 }
@@ -113,15 +118,21 @@
 
 @media (max-width: 460px) {
     #Text1div4 {
-        width: 100%;
-        margin-bottom: 0em;
+        width: 95%;
+        text-align: start;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        margin-left: 15px;
     }
 }
 
 @media (max-width: 375px) {
     #Text1div4 {
-        width: 100%;
-        margin-bottom: 0em;
+        width: 95%;
+        text-align: start;
+        margin-bottom: 20px;
+        margin-top: 40px;
+        margin-left: 15px;
     }
 }
 
@@ -185,11 +196,12 @@
     }
 
     #Text3div4 {
-        text-align: center;
+        text-align: start;
         width: 94%;
         height: 109px;
-        margin-left: 13px;
+        margin-left: 15px;
         margin-bottom: 30px;
+
     }
 }
 
@@ -314,15 +326,18 @@
     margin-bottom: 2em;
 }
 
-@media (max-width: 1024px) {
+
+@media (max-width: 1440px) {
     #buttondiv4 {
-        margin-top: 60px;
+        margin-top: 3.5rem;
+        margin-bottom: 5rem;
     }
 }
 
 @media (max-width: 460px) {
     #buttondiv4 {
         margin-top: 20px;
+        margin-bottom: 60px;
     }
 }
 
@@ -342,6 +357,8 @@
     #btn4 {
         width: 260px;
         height: 40px;
+        padding: 0.3em 1em;
+        margin-bottom: 10px;
     }
 }
 

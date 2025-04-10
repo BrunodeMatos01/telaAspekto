@@ -6,7 +6,7 @@
     justify-content: center;
     width: 100%;
     height: 6.2em;
-    background-color: #e6e6e6;
+    background-color: #fff5fe;
     margin: 0px;
     padding: 0px;
 }
@@ -35,12 +35,12 @@
 #carrosselEntredivs {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     overflow: hidden;
     position: relative;
     width: 100%;
     height: 6em;
-    mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
     padding: 0;
 }
 
@@ -90,32 +90,24 @@
 
 .img-track {
     display: flex;
-    animation: scroll 45s linear infinite;
     gap: 2rem;
-    /* Diminui o gap entre as imagens */
+    animation: scroll 20s linear infinite;
     width: fit-content;
     align-items: center;
 }
 
 .img-track img {
     width: 5.4rem;
-    margin-top: 0.5em;
-    /* Adiciona uma pequena margem em cima e em baixo */
-    margin-bottom: 0.5em;
+    margin: 0.5em 0;
     box-sizing: border-box;
-    opacity: 1;
-    /* Garante opacidade total inicialmente */
-    transition: opacity 0.3s ease;
-    /* Suaviza a transição de opacidade */
 }
 
 @keyframes scroll {
     0% {
-        transform: translateX(100%);
+        transform: translateX(0);
     }
-
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
 }
 

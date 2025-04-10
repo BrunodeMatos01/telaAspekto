@@ -23,51 +23,55 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-const slides = document.getElementById("slides");
-if (slides) {
-    let startX = 0;
-    let endX = 0;
-
-    slides.addEventListener("touchstart", function (event) {
-        startX = event.touches[0].clientX; // Captura a posição inicial do toque
-    });
-
-    slides.addEventListener("touchmove", function (event) {
-        endX = event.touches[0].clientX; // Atualiza a posição conforme o dedo se move
-    });
-
-    slides.addEventListener("touchend", function () {
-        let difference = startX - endX;
-        
-        if (difference > 50) {
-            document.getElementById("next")?.click();
-        } else if (difference < -50) {
-            document.getElementById("prev")?.click();
-        }
-    });
-}
-
 const nextButton = document.querySelector("#next");
 const prevButton = document.querySelector("#prev");
 const slideContainer = document.querySelector("#slides");
-const slideCount = document.querySelectorAll(".slide").length;
+const slides = document.querySelectorAll(".slide");
+const slideCount = slides.length;
 let currentIndex = 0;
 
+// Função que move para o slide certo
+function goToSlide(index) {
+    slideContainer.style.transform = `translateX(-${index * 100}%)`;
+}
+
+// Botões com loop infinito
 if (nextButton && prevButton && slideContainer) {
     nextButton.addEventListener("click", () => {
-        if (currentIndex < slideCount - 1) {
-            currentIndex++;
-            slideContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
-        }
+        currentIndex = (currentIndex + 1) % slideCount;
+        goToSlide(currentIndex);
     });
 
     prevButton.addEventListener("click", () => {
-        if (currentIndex > 0) {
-            currentIndex--;
-            slideContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+        currentIndex = (currentIndex - 1 + slideCount) % slideCount;
+        goToSlide(currentIndex);
+    });
+}
+
+// Swipe com o dedo (mobile)
+if (slideContainer) {
+    let startX = 0;
+    let endX = 0;
+
+    slideContainer.addEventListener("touchstart", function (event) {
+        startX = event.touches[0].clientX;
+    });
+
+    slideContainer.addEventListener("touchmove", function (event) {
+        endX = event.touches[0].clientX;
+    });
+
+    slideContainer.addEventListener("touchend", function () {
+        let difference = startX - endX;
+
+        if (difference > 50) {
+            nextButton?.click(); // Vai pro próximo
+        } else if (difference < -50) {
+            prevButton?.click(); // Volta pro anterior
         }
     });
 }
+
 
 // Função para validar e-mail
 function validarEmail(email) {

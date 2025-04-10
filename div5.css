@@ -35,13 +35,14 @@
     width: 549px;
     height: 111px;
     margin-bottom: 2em;
+    margin-top: 100px;
 }
 
 @media (max-width: 460px) {
     #Text1div5 {
-        width: 90%;
+        width: 95%;
         max-width: 460px;
-        margin: 0px;
+        margin-top: 70px;
     }
 }
 
@@ -316,7 +317,7 @@
 }
 
 #Imagemdiv5 img {
-    width: 70%;
+    width: 90%;
     max-width: 100%;
     height: auto;
     box-sizing: border-box;
@@ -326,7 +327,7 @@
 }
 
 #Imagemdiv5Mv img {
-    width: 50%; 
+    width: 80%; 
     max-width: 100%;
     height: auto;
     box-sizing: border-box;

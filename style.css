@@ -88,6 +88,11 @@
                 align-items: center;
             }
 
+            .svgNav svg{
+                width: 21px;
+                height: 21px;
+            }
+
             .querConversar {
                 width: 6em;
                 height: 0.8em;
@@ -212,6 +217,11 @@
                 align-items: center;
             }
 
+            .svgNav svg{
+                width: 21px;
+                height: 21px;
+            }
+            
             .querConversar {
                 width: 6em;
                 height: 0.8em;
