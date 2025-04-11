@@ -45,7 +45,7 @@
         height: auto;
         background: url(img/Rectangle\ \(2\).png) lightgray 0px 0px / 100% 100% no-repeat;
         color: white;
-        padding: 20px;
+        padding: 0px;
         position: relative;
         flex-shrink: 0;
     }
@@ -75,7 +75,7 @@
 
 @media (max-width: 460px) {
     #divNovoAspecto {
-        margin-left: 1rem;
+        margin-left: -1.7rem;
         max-width: 100%;
         text-align: start;
         margin-bottom: 20px;
