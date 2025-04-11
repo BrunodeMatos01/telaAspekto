@@ -276,7 +276,7 @@
     background: transparent;
     border: none;
     cursor: pointer;
-    z-index: 10;
+    z-index: 2;
     /* Coloca os botões acima do conteúdo */
 }
 
