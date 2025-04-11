@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom:  50px;
+    padding-bottom: 80px;
     margin: 0px;
     height: auto;
     width: 100%;
@@ -12,11 +12,13 @@
     flex-shrink: 0;
 }
 
+
 @media (max-width: 1024px) {
     #div4 {
         width: 100%;
         max-width: 1024px;
         height: auto;
+        padding: 0px;
         padding: 20px;
     }
 }
@@ -27,6 +29,7 @@
         width: 100%;
         max-width: 460px;
         height: auto;
+        padding: 0px;
         padding: 20px;
     }
 }

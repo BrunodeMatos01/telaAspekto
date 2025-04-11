@@ -248,6 +248,7 @@
     #divDotext {
         width: 500px;
         height: auto;
+        padding-bottom: 0px;
     }
 }
 
@@ -256,6 +257,7 @@
         width: 330px;
         height: 550px;
         margin: 0 auto;
+        padding-bottom: 0px;
     }
 }
 
@@ -263,6 +265,7 @@
     #divDotext {
         width: 330px;
         height: 550px;
+        padding-bottom: 0px;
     }
 }
 
