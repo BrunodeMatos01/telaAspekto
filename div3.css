@@ -140,7 +140,7 @@
     margin: 90px;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 2100px) {
     #divMae {
         display: flex;
         flex-direction: row;
