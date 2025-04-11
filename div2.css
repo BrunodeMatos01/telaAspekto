@@ -395,6 +395,16 @@
     width: 17vw;
     height: 22vh;
 }
+@media (max-width: 390px) {
+    
+    #text4div2 {
+        width: 90%;
+        max-width: 500px;
+        min-height: auto;
+        padding: 0rem;
+
+    }
+}
 
 #textFilha1div2,
 #textFilha2div2,
