@@ -232,7 +232,17 @@
 #divDotext {
     width: 450px;
     height: 550px;
+    padding-bottom: 40px;
 }
+
+@media (max-width: 2100px) {
+    #divDotext {
+        width: 500px;
+        height: auto;
+        padding-bottom: 40px;
+    }
+}
+
 
 @media (max-width: 1024px) {
     #divDotext {
@@ -617,7 +627,7 @@
     #btn5 {
         width: 360px;
         height: 40px;
-        margin-top: 62px;
+        margin-top: 57px;
         padding: 0.3em 1em;
     }
 }
