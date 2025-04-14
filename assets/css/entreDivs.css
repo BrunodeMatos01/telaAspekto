@@ -1,0 +1,116 @@
+/*========Carrossel Entre div1 e div2========*/
+
+#Entrediv1div2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 6.2em;
+    background-color: #fff5fe;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#textEntreDivs {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60%;
+    height: 4em;
+}
+
+#textEntreDivs span {
+    color: #140024;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18.764px;
+    font-weight: 500;
+    line-height: 17.734px;
+}
+
+#textCarrosselEntre {
+    width: 100%;
+}
+
+#carrosselEntredivs {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 6em;
+    mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+    padding: 0;
+}
+
+@media(max-width: 460px) {
+    #textEntreDivs {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 70%;
+        height: 4em;
+    }
+
+    #textEntreDivs span {
+        color: #140024;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18.764px;
+        font-weight: 500;
+        line-height: 17.734px;
+    }
+
+    #textCarrosselEntre {
+        width: 70vw;
+    }
+}
+
+@media(max-width: 960px) {
+    #textEntreDivs {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 90%;
+        height: 4em;
+    }
+
+    #textEntreDivs span {
+        color: #140024;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15.764px;
+        font-weight: 500;
+        line-height: 17.734px;
+    }
+
+    #textCarrosselEntre {
+        width: 100vw;
+    }
+}
+
+.img-track {
+    display: flex;
+    gap: 2rem;
+    animation: scroll 20s linear infinite;
+    width: fit-content;
+    align-items: center;
+}
+
+.img-track img {
+    width: 5.4rem;
+    margin: 0.5em 0;
+    box-sizing: border-box;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+/*===================*/
