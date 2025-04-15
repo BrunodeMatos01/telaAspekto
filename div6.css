@@ -8,7 +8,7 @@
     margin: 0px;
     height: 727.608px;
     width: 100%;
-    background: url(img/Rectangle\ \(2\).png) lightgray 0px 0px / 100% 100% no-repeat;
+    background: url(img/background-home.png) lightgray 0px 0px / 100% 100% no-repeat;
     flex-shrink: 0;
 }
 
@@ -17,7 +17,6 @@
         width: 100%;
         max-width: 568px;
         height: 850px;
-        
     }
 }
 

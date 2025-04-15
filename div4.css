@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 80px;
+    padding-bottom: 120px;
     margin: 0px;
     height: auto;
     width: 100%;
@@ -41,7 +41,7 @@
     height: 500px;
     flex-shrink: 0;
     border-radius: 17px;
-    background: url(img/inbound-marketing.png) lightgray -140.361px 0px / 271.383% 100% no-repeat;
+    background: url(img/inbound-marketing.png) lightgray 50% / cover no-repeat;
     margin-top: 90px;
 }
 
@@ -55,7 +55,7 @@
         height: 500px;
         flex-shrink: 0;
         border-radius: 17px;
-        background: url(img/inbound-marketing.png) lightgray -140.361px 0px / 271.383% 100% no-repeat;
+        background: url(img/inbound-marketing.png) lightgray 50% / cover no-repeat;
         margin-top: 90px;
     }
 }
@@ -67,8 +67,6 @@
         display: none;
     }
 }
-
-/*===================*/
 
 /*========Div Geral 4========*/
 #Geraldiv4 {
